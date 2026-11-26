@@ -14,7 +14,7 @@
 - `1d0e480` (na branch): animações ao rolar, sete fotos novas, typecheck com `next typegen`, entrada `site-windows` no launch.json, docs.
 - `660aceb`: handoff. `390c319`: build estático para o Netlify Drop. O commit seguinte: downloads com limite (HTTP 429) e docs finais. Tudo enviado para `origin/feat/animacoes-e-fotos`.
 
-**Estado:** `npm run build:netlify` passa e gera `netlify-drop/` com 2.631 arquivos (90,8 MB), 216 fotos convertidas sem falhas e 100 redirecionamentos. Testado com servidor local que imita o Netlify: home, `/eventos` → `/eventos/` (301), notícia, contato, `/sobre-nos` → `/a-fundacao/`, `/area-experimental/cad-norte` → `/centros-experimentais/cad-norte/`, 404, `robots.txt`, CSS, fontes e WebP com 200. **Não testados:** o upload real no Netlify, visual no navegador da pasta estática, o build normal depois das mudanças (só o typecheck rodou dentro do build estático) e o clique no envio do formulário no estático.
+**Estado:** `npm run build:netlify` passa e gera `netlify-drop/` com 2.631 arquivos (90,8 MB), 216 fotos convertidas sem falhas e 100 redirecionamentos. Testado com servidor local que imita o Netlify: home, `/eventos` → `/eventos/` (301), notícia, contato, `/sobre-nos` → `/a-fundacao/`, `/area-experimental/cad-norte` → `/centros-experimentais/cad-norte/`, 404, `robots.txt`, CSS, fontes e WebP com 200. Build normal conferido depois das mudanças: `npm run typecheck`, `npx eslint src` e `npm run build` (228 páginas) passam. **Não testados:** o upload real no Netlify, visual no navegador da pasta estática, o clique no envio do formulário no estático.
 
 **Próxima ação exata** (para gerar de novo ou continuar)
 1. `npm install` (num clone novo) e confirme que existem `scripts/build-netlify.mjs`, `src/lib/static-image-loader.ts`, `src/content/event-split.ts`, `src/content/event-split.static.ts` e `docs/DEPLOY_NETLIFY_DROP.md`.
@@ -108,7 +108,7 @@ Fora do site de propósito: área logada, inscrição e compra (continuam no sis
 
 ## 7. Pendências e próximos passos
 
-**Desta tarefa:** rodar o build normal (`npm run typecheck`, `npx eslint src`, `npm run build`) para confirmar que nada mudou fora do modo estático; olhar a pasta estática no navegador; o usuário publica arrastando `netlify-drop/` no Netlify Drop.
+**Desta tarefa:** olhar a pasta estática no navegador; o usuário publica arrastando `netlify-drop/` no Netlify Drop (a pasta precisa ser gerada de novo num clone novo: `npm install` + `npm run build:netlify`).
 
 **Depois:**
 1. Revisar com a Fundação: textos, fotos, pendências da `AUDITORIA_FINAL.md §6`. Combinar com ela a prévia pública.
