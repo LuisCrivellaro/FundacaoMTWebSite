@@ -16,6 +16,8 @@
 - **Cabeçalho corrigido** (pendência 2 da §7 antiga): o menu completo precisava de ~1.268 px de conteúdo e se sobrepunha de 1024 até ~1370 px. Agora: botão "Menu" abaixo de 1280 px (`xl`); de 1280 a 1407 px versão compacta (itens `px-3`, "Área do usuário" só com ícone `UserRound`, rótulo `sr-only` e `title`); a partir de 1408 px (breakpoint `wide` = 88rem em `@theme` no `globals.css`) tudo por extenso. Medido sem sobreposição em 1280, 1300 e 1408 px; mega-menu e painel "Menu" testados.
 - `npm run typecheck`, `npx eslint src scripts` e `npm run build` (228 páginas) passam. `npm run build:netlify`: 2.631 arquivos, 91,0 MB, 216 fotos sem falhas.
 
+**Netlify com Git (26/11/2026, depois do Drop):** o usuário publicou em https://fundacaomt.netlify.app conectando o repositório (build do Next.js, não a pasta estática). Problemas encontrados: o Netlify publicava a `main` antiga e as fotos voltavam **403** na Image CDN (`/_next/image` → `/.netlify/images`), porque o `remotePatterns` do Next não foi copiado para a lista de origens liberadas. Correção: `netlify.toml` com `[images] remote_images` (regex, igual ao `remotePatterns`), `X-Robots-Tag: noindex` e Node 24; `isPreviewDeploy` em `src/content/site.ts` (`NETLIFY=true` ou `SITE_PREVIEW=1`) gera `robots.txt` com `Disallow: /` e `<meta name="robots" content="noindex, nofollow">`. Para valer, o Netlify precisa publicar a branch `feat/animacoes-e-fotos` (mudar a "Production branch" no painel) ou a `main` precisa receber o merge (só com autorização do usuário).
+
 **Branch e commits**
 - Branch de trabalho: `feat/animacoes-e-fotos` (criada a partir de `main`). **Não fazer merge na `main` sem autorização do usuário. Não usar force push.**
 - `main` = `origin/main` = `54ff8d9` (site completo + pesquisa).

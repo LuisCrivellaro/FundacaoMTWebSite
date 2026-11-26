@@ -1,0 +1,25 @@
+# Prévia do site novo no Netlify (build do Next.js a partir do Git).
+# O Netlify detecta o Next.js e usa o adaptador oficial; o comando e a pasta são os padrões.
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# O next/image no Netlify passa pela Image CDN (/_next/image → /.netlify/images), que só
+# busca fotos de origens liberadas aqui (regex; aspas simples = sem escapar a barra).
+# Sem isso as fotos do servidor oficial voltam 403. Mantenha igual ao remotePatterns do next.config.ts.
+[images]
+  remote_images = [
+    'https://www\.fundacaomt\.com\.br/(storage|images|imgs)/.*',
+    'https://fundacaomt\.com\.br/images/.*',
+    'https://i\.ytimg\.com/vi/.*',
+  ]
+
+# Prévia: não indexar (o site oficial continua em www.fundacaomt.com.br).
+# O build também gera robots.txt "Disallow: /" e <meta name="robots" content="noindex"> quando NETLIFY=true.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

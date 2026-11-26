@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/layout/CookieConsent";
-import { contact, site, social } from "@/content/site";
+import { contact, isPreviewDeploy, site, social } from "@/content/site";
 import { media } from "@/content/media";
 import "./globals.css";
 
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   description:
     "Pesquisa agronômica aplicada desde 1993: áreas de pesquisa, centros experimentais, laboratórios, serviços e eventos técnicos para o produtor de Mato Grosso.",
   applicationName: site.name,
+  ...(isPreviewDeploy ? { robots: { index: false, follow: false } } : {}),
   openGraph: {
     type: "website",
     locale: "pt_BR",

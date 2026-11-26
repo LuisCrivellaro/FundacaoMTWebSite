@@ -10,6 +10,12 @@
  */
 export const OFFICIAL = process.env.NEXT_PUBLIC_LEGACY_URL ?? "https://www.fundacaomt.com.br";
 
+/**
+ * Prévia (ex.: fundacaomt.netlify.app): não indexar, para não competir com o site oficial.
+ * O Netlify define NETLIFY=true no build; SITE_PREVIEW=1 serve para outras hospedagens.
+ */
+export const isPreviewDeploy = process.env.NETLIFY === "true" || process.env.SITE_PREVIEW === "1";
+
 export const site = {
   name: "Fundação MT",
   legalName: "Fundação de Apoio à Pesquisa Agropecuária de Mato Grosso",
