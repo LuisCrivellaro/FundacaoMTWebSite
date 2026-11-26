@@ -28,7 +28,7 @@ export default function ServicesPage() {
         crumbs={[{ label: "Serviços" }]}
         title="Serviços técnicos com a mesma base da pesquisa."
         lead="Os serviços usam a metodologia, os laboratórios e os campos experimentais da Fundação MT. Escolha o serviço e peça um orçamento: a equipe responde com escopo e condições."
-        image={media.aerialPrimavera}
+        image={media.soybeanRows}
       >
         <ButtonLink href="/contato?assunto=servico">Pedir orçamento</ButtonLink>
       </PageHeader>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 </h2>
                 <p className="text-ink-mute">{g.text}</p>
               </div>
-              <ul className="mt-6 grid gap-5 md:grid-cols-2">
+              <ul className="reveal-group mt-6 grid gap-5 md:grid-cols-2">
                 {list.map((s) => (
                   <li key={s.slug}>
                     <Link
@@ -72,7 +72,7 @@ export default function ServicesPage() {
             </h2>
             <p className="text-ink-mute">Diagnóstico, bioensaios e testes em casa de vegetação.</p>
           </div>
-          <ul className="mt-6 grid gap-5 md:grid-cols-3">
+          <ul className="reveal-group mt-6 grid gap-5 md:grid-cols-3">
             {labs.map((l, i) => {
               const Icon = [Microscope, FlaskConical, GraduationCap][i] ?? Microscope;
               return (

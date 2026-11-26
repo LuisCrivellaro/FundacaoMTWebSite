@@ -4,6 +4,7 @@ import { ResearchAreas } from "@/components/home/ResearchAreas";
 import { CentersExplorer } from "@/components/home/CentersExplorer";
 import { Services } from "@/components/home/Services";
 import { Knowledge } from "@/components/home/Knowledge";
+import { FieldGallery } from "@/components/home/FieldGallery";
 import { EventsNews } from "@/components/home/EventsNews";
 import { ContactCta } from "@/components/home/ContactCta";
 import { SectionHeading } from "@/components/ui/Primitives";
@@ -34,6 +35,7 @@ export default function HomePage() {
         </div>
       </section>
       <Services />
+      <FieldGallery />
       <Knowledge />
       <EventsNews />
       <ContactCta />

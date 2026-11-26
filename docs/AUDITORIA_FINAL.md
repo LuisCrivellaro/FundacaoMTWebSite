@@ -4,7 +4,7 @@
 
 | Teste | Como | Resultado |
 |---|---|---|
-| TypeScript | `npx tsc --noEmit` | ✅ sem erros |
+| TypeScript | `npm run typecheck` (`next typegen && tsc --noEmit`) | ✅ sem erros |
 | Lint | `npx eslint src` | ✅ sem erros (corrigido 1 problema `react-hooks/static-components`) |
 | Build de produção | `npm run build` | ✅ 228 páginas estáticas (◐/○), 1 rota dinâmica (`/api/contato`) |
 | Verificação automática em 375 px | Script no navegador embutido, 26 URLs (todas as rotas e 4 redirecionamentos) | ✅ sem rolagem horizontal, 1 H1 por página, sem salto de título (após correção), 0 imagens sem `alt`, 0 links/botões sem nome |

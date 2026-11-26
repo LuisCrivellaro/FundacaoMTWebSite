@@ -71,7 +71,7 @@ export default function AboutPage() {
         </div>
         <div className="mt-5 rounded-[var(--radius-lg)] bg-forest-900 p-8 text-white md:p-10">
           <h3 className="text-sm font-medium text-leaf-400">Nosso jeito</h3>
-          <ul className="mt-6 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:grid-cols-5">
+          <ul className="reveal-group mt-6 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:grid-cols-5">
             {site.values.map((v) => (
               <li key={v} className="font-display text-[1.375rem] leading-snug">
                 {v}
@@ -88,7 +88,7 @@ export default function AboutPage() {
             title="Governança."
             muted="Conselho Curador e diretoria."
           />
-          <ul className="mt-14 grid gap-5 sm:grid-cols-2">
+          <ul className="reveal-group mt-14 grid gap-5 sm:grid-cols-2">
             {currentLeadership.map((p) => (
               <li key={p.name} className="flex items-center gap-6 rounded-[var(--radius-lg)] bg-paper p-6 ring-1 ring-line/60">
                 <span className="relative size-24 shrink-0 overflow-hidden rounded-full bg-sand">
@@ -103,7 +103,7 @@ export default function AboutPage() {
             ))}
           </ul>
           <h3 className="mt-16 font-display text-h3 text-ink">Ex-presidentes do Conselho Curador</h3>
-          <ul className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+          <ul className="reveal-group mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
             {councilPresidents.map((p) => (
               <li key={p.name}>
                 <span className="relative block aspect-square overflow-hidden rounded-[var(--radius-md)] bg-sand">
@@ -116,7 +116,7 @@ export default function AboutPage() {
           </ul>
 
           <h3 className="mt-16 font-display text-h3 text-ink">Liderança técnica</h3>
-          <ul className="mt-8 grid gap-5 md:grid-cols-3">
+          <ul className="reveal-group mt-8 grid gap-5 md:grid-cols-3">
             {leadership.map((p) => (
               <li key={p.name} className="rounded-[var(--radius-lg)] bg-paper p-6 ring-1 ring-line/60">
                 <div className="flex items-center gap-4">

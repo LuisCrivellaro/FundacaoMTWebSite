@@ -6,6 +6,7 @@ import { NewsCard } from "@/components/cards";
 import { publications, restrictedTopics } from "@/content/publications";
 import { external, OFFICIAL } from "@/content/site";
 import { news } from "@/content/news";
+import { media } from "@/content/media";
 
 export const metadata: Metadata = {
   title: "Conhecimento técnico",
@@ -30,6 +31,7 @@ export default function KnowledgePage() {
         crumbs={[{ label: "Conhecimento" }]}
         title="Publicações e informações técnicas."
         lead="Materiais publicados pela Fundação MT para consulta e download. Os resultados detalhados por área ficam na área técnica do site oficial, com cadastro gratuito."
+        image={media.cultivarShowcase}
       />
 
       <section aria-labelledby="publicacoes" className="wrap pb-20">

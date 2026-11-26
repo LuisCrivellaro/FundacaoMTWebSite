@@ -9,17 +9,20 @@ import { ButtonLink } from "@/components/ui/Button";
 export function Hero() {
   return (
     <section aria-labelledby="hero-titulo" className="px-[clamp(0.5rem,0.2rem+1.2vw,1.5rem)] pb-4">
-      <div className="relative isolate flex min-h-[calc(100svh-5.5rem)] flex-col justify-end overflow-hidden rounded-[var(--radius-xl)] bg-forest-900 md:min-h-[44rem] lg:min-h-[calc(100svh-5.5rem)]">
-        <Image
-          src={media.aerialSul.src}
-          alt={media.aerialSul.alt}
-          fill
-          priority
-          fetchPriority="high"
-          quality={60}
-          sizes="100vw"
-          className="hero-photo -z-20 object-cover object-[55%_40%]"
-        />
+      <div className="hero-stage relative isolate flex min-h-[calc(100svh-5.5rem)] flex-col justify-end overflow-hidden rounded-[var(--radius-xl)] bg-forest-900 md:min-h-[44rem] lg:min-h-[calc(100svh-5.5rem)]">
+        {/* A foto desce mais devagar que a página ao rolar (CSS, ver globals.css) */}
+        <div className="hero-drift parallax-layer -z-20">
+          <Image
+            src={media.aerialSul.src}
+            alt={media.aerialSul.alt}
+            fill
+            priority
+            fetchPriority="high"
+            quality={60}
+            sizes="100vw"
+            className="hero-photo object-cover object-[55%_40%]"
+          />
+        </div>
         {/* Leitura: escurece a base e a esquerda sem esconder as parcelas */}
         <div
           aria-hidden="true"
@@ -27,7 +30,7 @@ export function Hero() {
         />
 
         <div className="wrap pb-10 md:pb-14 lg:pb-16">
-          <div className="max-w-[56rem]">
+          <div className="hero-copy max-w-[56rem]">
             <h1
               id="hero-titulo"
               className="hero-in font-display text-display font-[400] text-white"

@@ -58,6 +58,49 @@ export const media = {
     width: 6804,
     height: 4536,
   },
+  // Fotos de campo e de eventos publicadas nas notícias oficiais (originais ≥ 1600 px; fonte em docs/CONTENT_SOURCES.md §3)
+  fieldDayAerial: {
+    src: `${S}/post/1770842933-bAUD9CGVE3.JPG`,
+    alt: "Vista aérea de um dia de campo: tenda, carros e visitantes ao lado das parcelas experimentais",
+    width: 4000,
+    height: 3000,
+  },
+  cultivarShowcase: {
+    src: `${S}/post/1713895348-FVm3EES0TC.JPG`,
+    alt: "Pesquisadora apresenta uma vitrine de cultivares a um grupo de visitantes no campo",
+    width: 6000,
+    height: 4000,
+  },
+  soybeanRows: {
+    src: `${S}/post/1716934292-xImoGrkwk1.jpeg`,
+    alt: "Lavoura de soja em estágio inicial, com duas pessoas caminhando entre as linhas ao fundo",
+    width: 4032,
+    height: 3024,
+  },
+  fieldTalk: {
+    src: `${S}/post/1768241835-9Lwt8HNvwO.jpeg`,
+    alt: "Apresentação técnica sob uma tenda, ao lado de uma lavoura de soja, durante um dia de campo",
+    width: 1600,
+    height: 1156,
+  },
+  etSojaAudience: {
+    src: `${S}/post/1778099889-u3l3iXOyJE.jpeg`,
+    alt: "Plateia acompanha uma palestra no palco do 25º Encontro Técnico de Soja",
+    width: 6000,
+    height: 3376,
+  },
+  etPecuariaTalk: {
+    src: `${S}/post/1759842712-1udtBf7yD2.jpeg`,
+    alt: "Palestrante apresenta dados sobre pastagens no 4º Encontro Técnico de Pecuária",
+    width: 5987,
+    height: 3369,
+  },
+  conferenceAudience: {
+    src: `${S}/post/1716935920-91eMAhGW7N.jpg`,
+    alt: "Auditório cheio acompanha a apresentação de resultados de pesquisa em um encontro técnico",
+    width: 5917,
+    height: 3329,
+  },
   // Áreas de pesquisa (fotos de campo e laboratório)
   entomologia: { src: `${S}/research-area/entomologia.jpg`, alt: "Inseto sobre folha de soja", width: 368, height: 276 },
   fitopatologia: { src: `${S}/research-area/1628521944.jpeg`, alt: "Folha de soja com lesão de doença", width: 960, height: 1280 },

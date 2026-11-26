@@ -29,7 +29,7 @@ export default function ResearchPage() {
         <h2 id="lista-areas" className="sr-only">
           Áreas de pesquisa
         </h2>
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="reveal-group grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {areas.map((a) => (
             <li key={a.slug}>
               <Link

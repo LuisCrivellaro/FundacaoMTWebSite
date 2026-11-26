@@ -10,7 +10,7 @@ Regras que valem para todo o site:
 - Nenhum rótulo (eyebrow) acima de títulos; nada de números de seção.
 - Títulos com duas frases: a afirmação em tinta escura e o complemento em tom suave, na mesma `h2`.
 - Fotografias da própria Fundação; nenhuma imagem de banco apresentada como registro real.
-- Movimento só onde ajuda a ler: uma entrada no hero e um momento de leitura guiada na home.
+- Movimento ligado à rolagem e à leitura (ver §7): conteúdo entra ao aparecer na tela, fotos têm profundidade, nada se move sozinho em loop.
 
 ## 2. Cores
 
@@ -90,14 +90,23 @@ Estados cobertos: hover, foco (`:focus-visible` com anel `brand-600`), pressiona
 
 | Onde | O quê | Por quê |
 |---|---|---|
-| Hero | Título, texto e botões sobem com desfoque (0,9 s, `ease-out-expo`); a foto assenta de 1,06 para 1 | Entrada única ao carregar (CSS puro) |
-| "Quem somos" | Palavras ganham opacidade conforme a rolagem | Leitura guiada da missão (momento da página) |
-| Áreas de pesquisa | Foto aérea fixa (sticky) enquanto a lista rola | Contexto visual sem carrossel |
-| Centros experimentais | Troca de foto com fade ao escolher o centro (tablist, setas do teclado) | Escolha do usuário, sem rotação automática |
+| Hero | Título, texto e botões sobem com desfoque (0,9 s, `ease-out-expo`); a foto assenta de 1,06 para 1. Ao rolar para fora, a foto desce mais devagar que a página e o texto some subindo | Entrada ao carregar + profundidade na saída |
+| Cabeçalho das páginas internas | Trilha, título, texto e botões sobem em sequência; a foto abre de baixo para cima e desfaz o zoom | Mesma entrada do hero em todas as páginas |
+| Títulos de seção, cartões, listas | Sobem 36 px e aparecem ao entrar na tela; em grades, as colunas entram escalonadas (`--i` 0, 1, 2) | Ritmo de leitura ao rolar |
+| Fotos em moldura (`Frame`, evento em destaque) | Abrem de baixo para cima e desfazem o zoom ao entrar na tela | Fotos como protagonistas |
+| Foto da sede, bloco de serviços | Parallax: a foto se desloca 7% mais devagar dentro da moldura | Profundidade sem mexer no texto |
+| "Quem somos" | Palavras ganham opacidade conforme a rolagem; números (6, 3, 200+, 26) contam a partir de zero ao aparecer | Leitura guiada da missão |
+| Áreas de pesquisa | Foto aérea fixa (sticky) que recua o zoom enquanto a lista rola | Contexto visual sem carrossel |
+| "Do campo experimental ao produtor" | Duas faixas de fotos correm em sentidos opostos conforme a rolagem | Mostrar o volume de campo e eventos sem carrossel automático |
+| Centros experimentais | Troca de foto com fade; texto do centro sobe; marcador verde desliza até o centro escolhido | Escolha do usuário, sem rotação automática |
+| Convite final ("Fale com a equipe") | As parcelas do grafismo brotam em diagonal ao entrar na tela | Fecho da página |
+| Notícia | Barra verde de progresso de leitura no topo | Orientação em textos longos |
 | Cartões e fotos | Elevação de 2 px; zoom de 1,03 na foto | Resposta ao ponteiro |
 | Menus | Fade + 6 px | Orientação espacial |
 
-Tudo respeita `prefers-reduced-motion`: as animações CSS são desligadas, a frase aparece inteira e as trocas de foto deixam de escalar. Sem parallax em texto, sem animação de cartão ao rolar e sem 3D.
+**Como funciona.** O movimento ao rolar usa CSS scroll-driven animations (`animation-timeline: view()`/`scroll()`), sem JavaScript: classes `.reveal`, `.reveal-group`, `.stagger`, `.reveal-photo`, `.parallax` + `.parallax-layer`, `.photo-band`, `.hero-stage`, `.plots-scope`, `.read-progress` em `globals.css`. As animações usam `transform` e `opacity`; o hover do Tailwind 4 usa as propriedades `translate`/`scale`, então os dois se somam. Moldura com `overflow-hidden` vira o "scroller" mais próximo da imagem, por isso a linha do tempo é nomeada na moldura (`view-timeline-name`) e usada pela imagem. JavaScript só no contador (`CountUp`, com `motion`) e no seletor de centros.
+
+**Movimento reduzido e navegadores sem suporte.** Tudo fica dentro de `@media (prefers-reduced-motion: no-preference)` e `@supports (animation-timeline: view())`. Com movimento reduzido ou sem suporte (Firefox, hoje), o conteúdo aparece no estado final, as faixas de fotos viram listas com rolagem horizontal e o contador mostra o número final. Nada se move em loop sozinho (sem carrossel automático, sem marquee), e não há parallax em texto nem 3D.
 
 ## 8. Superfícies do navegador
 

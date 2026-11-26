@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/ui/Primitives";
 import { ButtonLink } from "@/components/ui/Button";
 import { EventsBrowser } from "@/components/EventsBrowser";
 import { events, getEventSplit, seriesOf } from "@/content/events";
+import { media } from "@/content/media";
 
 export const metadata: Metadata = {
   title: "Eventos",
@@ -21,6 +22,7 @@ export default async function EventsPage() {
         crumbs={[{ label: "Eventos" }]}
         title="Encontros técnicos, dias de campo e treinamentos."
         lead="O Programa de Difusão de Tecnologia leva os resultados de pesquisa a produtores, consultores e técnicos, em Cuiabá, nos CADs e online."
+        image={media.etSojaAudience}
       >
         <ButtonLink href="/contato?assunto=evento" variant="secondary">
           Quero patrocinar um evento

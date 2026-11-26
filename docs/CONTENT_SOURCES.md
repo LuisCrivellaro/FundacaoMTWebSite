@@ -54,6 +54,21 @@ Para trocar as imagens por arquivos autorizados, basta editar `src/content/media
 | Áreas de pesquisa | `research-area/*` | 283 a 1563 px (as menores só como miniatura) |
 | Pesquisadores, conselho | `researchers/*`, `/imgs/inside/*` | Retratos oficiais |
 | Notícias e eventos | `post/*`, `products/*` | Imagens das próprias publicações |
+| Faixa "Do campo experimental ao produtor" (home) e cabeçalhos de Eventos, Conhecimento, Serviços e Contato | Fotos das notícias oficiais, escolhidas por resolução e por mostrarem campo, pesquisa ou eventos reais (25/11/2026). Ver lista abaixo | 1600 a 6000 px |
+
+Fotos de notícias usadas fora da notícia (`media.ts`):
+
+| Chave em `media.ts` | Arquivo (`storage/images/post/`) | Notícia de origem | Onde aparece |
+|---|---|---|---|
+| `fieldDayAerial` | `1770842933-bAUD9CGVE3.JPG` (4000 × 3000) | "Ciência que vira resultado: o papel da Fundação MT como ICT…" (11/02/2026) | Faixa da home |
+| `cultivarShowcase` | `1713895348-FVm3EES0TC.JPG` (6000 × 4000) | "Milho e algodão: Dia de campo apresentará dados de pesquisas realizadas à campo" (23/04/2024) | Faixa da home, topo de Conhecimento |
+| `soybeanRows` | `1716934292-xImoGrkwk1.jpeg` (4032 × 3024) | "Consultoria agronômica é importante ferramenta no planejamento de safra" (28/05/2024) | Faixa da home, topo de Serviços |
+| `fieldTalk` | `1768241835-9Lwt8HNvwO.jpeg` (1600 × 1156) | "Safra 25/26 em campo: Fundação MT leva conhecimento técnico…" (12/01/2026) | Faixa da home, topo de Contato |
+| `etSojaAudience` | `1778099889-u3l3iXOyJE.jpeg` (6000 × 3376) | "Fundação MT realiza 26º Encontro Técnico de Soja…" (06/05/2026); o telão mostra o 25º ET Soja | Faixa da home, topo de Eventos |
+| `etPecuariaTalk` | `1759842712-1udtBf7yD2.jpeg` (5987 × 3369) | "Mercado da pecuária de Mato Grosso vive bom momento…" (07/10/2025) | Faixa da home |
+| `conferenceAudience` | `1716935920-91eMAhGW7N.jpg` (5917 × 3329) | "Biológicos no manejo de fitonematóides podem gerar retorno econômico de até 8 sc/ha de soja" (27/05/2024) | Faixa da home |
+
+A foto do FMT ID (`1721743116-Bxx69cly9z.jpg`) **não** foi usada: é montagem com foto de banco.
 
 **Não usamos** as imagens de banco do site antigo (Data Science com gráficos genéricos, "Liderança" com mão e gráfico, banner com pessoas e tablet). Onde não há foto própria, usamos um grafismo de parcelas experimentais (`DataGlyph`) ou iniciais (`Avatar`).
 

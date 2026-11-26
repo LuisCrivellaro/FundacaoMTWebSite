@@ -18,7 +18,7 @@ export function ResearchAreas() {
           lead="Os pesquisadores trabalham nos CADs, em casa de vegetação e nos laboratórios, com soja, milho, algodão, plantas de cobertura e pecuária de corte."
         />
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-12">
+        <div className="areas-scope mt-16 grid gap-12 lg:grid-cols-12">
           <div className="hidden lg:col-span-5 lg:block">
             <div className="sticky top-24 aspect-[4/5] overflow-hidden rounded-[var(--radius-lg)] bg-sand">
               <Image
@@ -26,14 +26,14 @@ export function ResearchAreas() {
                 alt={media.aerialMedioNorte.alt}
                 fill
                 sizes="(min-width: 1024px) 38vw, 0px"
-                className="object-cover"
+                className="areas-photo object-cover"
               />
             </div>
           </div>
 
           <ul className="divide-y divide-line border-y border-line lg:col-span-7">
             {areas.map((a) => (
-              <li key={a.slug}>
+              <li key={a.slug} className="reveal">
                 <Link
                   href={`/pesquisa/${a.slug}`}
                   className="group flex items-center gap-5 py-5 transition-colors duration-300 md:gap-7 md:py-6"

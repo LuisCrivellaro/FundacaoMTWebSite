@@ -44,7 +44,7 @@ export default function CentersPage() {
           </div>
         </Link>
 
-        <ul className="mt-5 grid gap-5 md:grid-cols-2">
+        <ul className="reveal-group mt-5 grid gap-5 md:grid-cols-2">
           {cads.map((c) => (
             <li key={c.slug}>
               <Link

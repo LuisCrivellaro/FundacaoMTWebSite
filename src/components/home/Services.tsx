@@ -25,14 +25,16 @@ export function Services() {
       />
 
       <div className="mt-14 grid gap-5 lg:grid-cols-12">
-        <div className="group relative min-h-[22rem] overflow-hidden rounded-[var(--radius-lg)] bg-forest-900 lg:col-span-5 lg:row-span-2">
-          <Image
-            src={media.aerialPrimavera.src}
-            alt={media.aerialPrimavera.alt}
-            fill
-            sizes="(min-width: 1024px) 40vw, 100vw"
-            className="object-cover opacity-90 transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
-          />
+        <div className="group parallax reveal relative min-h-[22rem] overflow-hidden rounded-[var(--radius-lg)] bg-forest-900 lg:col-span-5 lg:row-span-2">
+          <div className="parallax-layer">
+            <Image
+              src={media.aerialPrimavera.src}
+              alt={media.aerialPrimavera.alt}
+              fill
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="object-cover opacity-90 transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
+            />
+          </div>
           <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgb(12_31_19/0)_35%,rgb(12_31_19/0.85)_100%)]" />
           <div className="absolute inset-x-0 bottom-0 p-7 md:p-9">
             <p className="max-w-sm font-display text-[1.75rem] leading-tight text-white">Precisa de um ensaio, uma análise ou uma recomendação?</p>
@@ -44,7 +46,7 @@ export function Services() {
           </div>
         </div>
 
-        <ul className="grid gap-5 sm:grid-cols-2 lg:col-span-7">
+        <ul className="reveal-group grid gap-5 sm:grid-cols-2 lg:col-span-7">
           {services.map((s) => {
             const Icon = icons[s.slug] ?? Sprout;
             return (

@@ -29,7 +29,7 @@ export function SectionHeading({
       <Tag
         id={id}
         className={cn(
-          "font-display font-[420] text-h2 lg:col-span-7",
+          "reveal font-display font-[420] text-h2 lg:col-span-7",
           tone === "dark" ? "text-ink" : "text-white",
           Tag === "h1" && "text-h1",
         )}
@@ -38,7 +38,7 @@ export function SectionHeading({
         {muted && <span className={cn("block", tone === "dark" ? "text-ink-mute" : "text-leaf-200/80")}>{muted}</span>}
       </Tag>
       {(lead || children) && (
-        <div className={cn("lg:col-span-5", align === "split" ? "lg:pb-2" : "")}>
+        <div className={cn("reveal [--i:1] lg:col-span-5", align === "split" ? "lg:pb-2" : "")}>
           {lead && <p className={cn("text-lead measure", tone === "dark" ? "text-ink-soft" : "text-white/80")}>{lead}</p>}
           {children}
         </div>
@@ -91,15 +91,27 @@ export function PageHeader({
 }) {
   return (
     <header className="wrap pt-6 pb-12 md:pt-10 md:pb-16">
-      <Breadcrumbs items={crumbs} />
+      <div className="hero-in">
+        <Breadcrumbs items={crumbs} />
+      </div>
       <div className={cn("mt-6 grid gap-10", image ? "lg:grid-cols-12 lg:items-end" : "")}>
         <div className={cn(image ? "lg:col-span-7" : "max-w-4xl")}>
-          <h1 className="font-display text-h1 font-[420] text-ink">{title}</h1>
-          {lead && <p className="mt-6 text-lead text-ink-soft measure">{lead}</p>}
-          {children && <div className="mt-8 flex flex-wrap gap-3">{children}</div>}
+          <h1 className="hero-in font-display text-h1 font-[420] text-ink" style={{ animationDelay: "60ms" }}>
+            {title}
+          </h1>
+          {lead && (
+            <p className="hero-in mt-6 text-lead text-ink-soft measure" style={{ animationDelay: "200ms" }}>
+              {lead}
+            </p>
+          )}
+          {children && (
+            <div className="hero-in mt-8 flex flex-wrap gap-3" style={{ animationDelay: "300ms" }}>
+              {children}
+            </div>
+          )}
         </div>
         {image && (
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] bg-sand lg:col-span-5">
+          <div className="photo-in relative aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] bg-sand lg:col-span-5">
             <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" priority />
           </div>
         )}
@@ -166,7 +178,7 @@ export function Frame({
 }) {
   const radius = { md: "rounded-[var(--radius-md)]", lg: "rounded-[var(--radius-lg)]", xl: "rounded-[var(--radius-xl)]" }[rounded];
   return (
-    <div className={cn("relative overflow-hidden bg-sand", radius, className)}>
+    <div className={cn("reveal-photo relative overflow-hidden bg-sand", radius, className)}>
       <Image
         src={src}
         alt={alt}

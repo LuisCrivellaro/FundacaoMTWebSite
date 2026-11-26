@@ -9,6 +9,7 @@ import { services } from "@/content/services";
 import { areas } from "@/content/areas";
 import { centers } from "@/content/centers";
 import { labs } from "@/content/labs";
+import { media } from "@/content/media";
 
 export const metadata: Metadata = {
   title: "Contato",
@@ -29,6 +30,7 @@ export default function ContactPage() {
         crumbs={[{ label: "Contato" }]}
         title="Fale com a Fundação MT."
         lead="Escolha o assunto para que a mensagem chegue à equipe certa. Para uma conversa rápida, use o WhatsApp."
+        image={media.fieldTalk}
       />
       <div className="wrap grid gap-14 pb-24 md:pb-32 lg:grid-cols-12">
         <div className="lg:col-span-7">

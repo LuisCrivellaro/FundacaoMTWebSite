@@ -19,9 +19,9 @@ export async function EventsNews() {
 
       <div className="mt-14 grid gap-5 lg:grid-cols-12">
         {featured ? (
-          <article className="group relative overflow-hidden rounded-[var(--radius-lg)] bg-forest-950 text-white lg:col-span-7">
+          <article className="reveal group relative overflow-hidden rounded-[var(--radius-lg)] bg-forest-950 text-white lg:col-span-7">
             {featured.image && (
-              <div className="relative aspect-[16/9]">
+              <div className="reveal-photo relative aspect-[16/9] overflow-hidden">
                 <Image
                   src={featured.image}
                   alt=""
@@ -60,7 +60,7 @@ export async function EventsNews() {
           </div>
         )}
 
-        <div className="flex flex-col gap-5 lg:col-span-5">
+        <div className="reveal-group flex flex-col gap-5 lg:col-span-5">
           {(upcoming.slice(1, 3).length ? upcoming.slice(1, 3) : past.slice(0, 2)).map((e) => (
             <EventCard key={e.slug} event={e} />
           ))}
@@ -76,7 +76,7 @@ export async function EventsNews() {
         <h3 className="font-display text-h3 text-ink">Últimas notícias</h3>
         <TextLink href="/noticias">Ver todas</TextLink>
       </div>
-      <div className="mt-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="stagger mt-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {latest.map((n) => (
           <NewsCard key={n.slug} item={n} />
         ))}

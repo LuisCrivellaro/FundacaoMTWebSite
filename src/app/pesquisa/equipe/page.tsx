@@ -26,7 +26,7 @@ export default function TeamPage() {
         <h2 id="lideranca" className="font-display text-h3 text-ink">
           Liderança de Pesquisa, Serviços e Operações
         </h2>
-        <ul className="mt-6 grid gap-5 md:grid-cols-3">
+        <ul className="reveal-group mt-6 grid gap-5 md:grid-cols-3">
           {leadership.map((p) => (
             <li key={p.name} className="flex items-center gap-4 rounded-[var(--radius-lg)] bg-white p-5 ring-1 ring-line/60">
               <Avatar name={p.name} photo={p.photo} size={64} />
@@ -43,7 +43,7 @@ export default function TeamPage() {
         <h2 id="pesquisadores" className="font-display text-h3 text-ink">
           Pesquisadores por área
         </h2>
-        <ul className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="reveal-group mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {people
             .filter((p) => !leadership.some((l) => l.name === p.name))
             .map((p) => (
@@ -74,7 +74,7 @@ export default function TeamPage() {
         <h2 id="coordenadores" className="font-display text-h3 text-ink">
           Coordenação dos centros experimentais
         </h2>
-        <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="reveal-group mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {coordinators.map((c) => (
             <li key={c.slug} className="rounded-[var(--radius-lg)] bg-white p-5 ring-1 ring-line/60">
               <Link href={`/centros-experimentais/${c.slug}`} className="text-sm font-medium text-brand-600 hover:underline">

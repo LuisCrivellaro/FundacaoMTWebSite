@@ -7,7 +7,7 @@ import { formatDate, dateParts } from "@/lib/format";
 
 export function NewsCard({ item, priority, size = "md" }: { item: NewsItem; priority?: boolean; size?: "md" | "lg" }) {
   return (
-    <article className="group relative flex h-full flex-col">
+    <article className="reveal group relative flex h-full flex-col">
       <div className={`relative overflow-hidden rounded-[var(--radius-md)] bg-sand ${size === "lg" ? "aspect-[16/10]" : "aspect-[3/2]"}`}>
         {item.image && (
           <Image
@@ -40,7 +40,7 @@ export function EventCard({ event, tone = "light" }: { event: EventWithMeta; ton
   const open = event.lots.some((l) => /FAÇA SUA INSCRIÇÃO/i.test(l.status));
   return (
     <article
-      className={`group relative flex h-full gap-5 rounded-[var(--radius-lg)] p-5 transition-[transform,box-shadow] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-0.5 md:p-6 ${
+      className={`reveal group relative flex h-full gap-5 rounded-[var(--radius-lg)] p-5 transition-[transform,box-shadow] duration-300 ease-[var(--ease-out-expo)] hover:-translate-y-0.5 md:p-6 ${
         tone === "light" ? "bg-white shadow-[var(--shadow-card)] ring-1 ring-line/60 hover:shadow-[var(--shadow-lift)]" : "bg-white/[0.06] ring-1 ring-white/10"
       }`}
     >

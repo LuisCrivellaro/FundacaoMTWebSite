@@ -229,6 +229,246 @@
   }
 }
 
+/* Entrada das páginas internas: a foto do cabeçalho abre de baixo para cima */
+@media (prefers-reduced-motion: no-preference) {
+  .photo-in {
+    animation: photo-unveil 1.2s var(--ease-out-expo) 0.15s both;
+  }
+  .photo-in img {
+    animation: photo-settle 1.8s var(--ease-out-expo) 0.15s both;
+  }
+}
+@keyframes photo-unveil {
+  from {
+    clip-path: inset(22% 0 0 0 round var(--radius-lg));
+    opacity: 0.4;
+  }
+  to {
+    clip-path: inset(0 round var(--radius-lg));
+    opacity: 1;
+  }
+}
+@keyframes photo-settle {
+  from {
+    transform: scale(1.14);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/*
+ * Movimento ligado à rolagem (CSS scroll-driven animations): sem JavaScript.
+ * Só roda com prefers-reduced-motion: no-preference e suporte a animation-timeline.
+ * Sem suporte (Firefox hoje) ou com movimento reduzido, tudo fica no estado final.
+ * As animações usam `transform` e `opacity`; o hover dos cartões usa as
+ * propriedades `translate`/`scale` do Tailwind 4, então os dois se somam.
+ *
+ * Classes:
+ * .reveal          sobe e aparece ao entrar na tela
+ * .stagger         define --i (0, 1, 2) nos filhos diretos, para escalonar colunas
+ * .reveal-group    .stagger + .reveal em cada filho direto
+ * .reveal-photo    foto que "abre" e desfaz o zoom ao entrar na tela
+ * .parallax        moldura; o filho .parallax-layer se desloca mais devagar que a página
+ * .photo-band      faixa de fotos que corre na horizontal conforme a rolagem
+ */
+.parallax-layer {
+  position: absolute;
+  inset: 0;
+}
+.photo-band {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+.photo-band li {
+  scroll-snap-align: start;
+}
+.read-progress {
+  display: none;
+}
+.stagger > :nth-child(3n + 2),
+.reveal-group > :nth-child(3n + 2) {
+  --i: 1;
+}
+.stagger > :nth-child(3n + 3),
+.reveal-group > :nth-child(3n + 3) {
+  --i: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal,
+    .reveal-group > * {
+      animation: reveal-up var(--ease-out-expo) both;
+      animation-timeline: view();
+      animation-range: entry calc(var(--i, 0) * 10%) entry calc(80% + var(--i, 0) * 10%);
+    }
+
+    /* view-timeline na moldura: a imagem interna usa a linha do tempo dela,
+       porque a moldura com overflow-hidden vira o "scroller" mais próximo da imagem. */
+    .reveal-photo {
+      view-timeline-name: --photo;
+      animation: photo-unveil var(--ease-out-expo) both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 90%;
+    }
+    .reveal-photo img {
+      animation: photo-settle linear both;
+      animation-timeline: --photo;
+      animation-range: entry 0% cover 60%;
+    }
+
+    .parallax {
+      view-timeline-name: --parallax;
+    }
+    .parallax-layer {
+      inset: -9% 0;
+      animation: parallax-drift linear both;
+      animation-timeline: --parallax;
+      animation-range: cover 0% cover 100%;
+    }
+
+    /* Hero da home: a foto desce devagar e o texto some ao rolar para fora */
+    .hero-stage {
+      view-timeline-name: --hero;
+      /* sem isso o scroll-padding-top do html (6rem) adianta a saída e o texto já começa esmaecido */
+      view-timeline-inset: 0;
+    }
+    .hero-drift {
+      inset: -14% 0 0 0;
+      animation: hero-drift linear both;
+      animation-timeline: --hero;
+      animation-range: exit 0% exit 100%;
+    }
+    .hero-copy {
+      animation: hero-copy-out linear both;
+      animation-timeline: --hero;
+      animation-range: exit 0% exit 55%;
+    }
+
+    /* Áreas de pesquisa: a foto fixa recua o zoom enquanto a lista passa */
+    .areas-scope {
+      view-timeline-name: --areas;
+    }
+    .areas-photo {
+      animation: areas-zoom linear both;
+      animation-timeline: --areas;
+      animation-range: cover 10% cover 90%;
+    }
+
+    /* Faixa de fotos: corre para a esquerda (ou direita) conforme a rolagem */
+    .photo-band {
+      overflow-x: clip;
+      scroll-snap-type: none;
+    }
+    .photo-band > .band-track {
+      animation: band-left linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
+    .photo-band--reverse > .band-track {
+      animation-name: band-right;
+    }
+
+    /* Grafismo de parcelas do convite final: os quadrados "brotam" em sequência */
+    .plots-scope {
+      view-timeline-name: --plots;
+    }
+    .plot {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: plot-in var(--ease-out-expo) both;
+      animation-timeline: --plots;
+      animation-range: entry calc(var(--i, 0) * 1.5%) entry calc(45% + var(--i, 0) * 1.5%);
+    }
+
+    /* Barra de leitura das notícias */
+    .read-progress {
+      display: block;
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 60;
+      height: 3px;
+      background: var(--color-brand-600);
+      transform-origin: 0 50%;
+      animation: read-grow linear both;
+      animation-timeline: scroll(root block);
+    }
+  }
+}
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(2.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes parallax-drift {
+  from {
+    transform: translateY(-7%);
+  }
+  to {
+    transform: translateY(7%);
+  }
+}
+@keyframes hero-drift {
+  to {
+    transform: translateY(12%);
+  }
+}
+@keyframes hero-copy-out {
+  to {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+}
+@keyframes areas-zoom {
+  from {
+    transform: scale(1.18);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes band-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(min(0px, calc(-100% + 100vw)));
+  }
+}
+@keyframes band-right {
+  from {
+    transform: translateX(min(0px, calc(-100% + 100vw)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes plot-in {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes read-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

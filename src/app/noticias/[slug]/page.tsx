@@ -49,6 +49,7 @@ export default async function ArticlePage({ params }: PageProps<"/noticias/[slug
 
   return (
     <>
+      <div aria-hidden="true" className="read-progress" />
       <article>
         <header className="wrap pt-6 pb-10">
           <Breadcrumbs items={[{ label: "Notícias", href: "/noticias" }, { label: n.title }]} />

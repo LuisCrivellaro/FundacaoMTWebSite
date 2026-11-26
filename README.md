@@ -4,7 +4,7 @@ Redesign do site da [Fundação MT](https://www.fundacaomt.com.br), instituiçã
 
 ## Como rodar
 
-Requer Node.js 20.9 ou superior (testado com 24.22.3).
+Requer Node.js 20.9 ou superior (testado com 24.22.3 no macOS e 24.15.0 no Windows).
 
 ```bash
 npm install
@@ -20,7 +20,7 @@ npm run build && npm start
 
 `npm run dev` e `npm run build` executam antes o `scripts/fetch-fonts.mjs`, que baixa as fontes do Fontshare para `src/fonts/`. **Os arquivos de fonte não são versionados**: a licença ITF FFL permite hospedar no site, mas proíbe redistribuir em repositório público.
 
-Outros comandos: `npm run lint`, `npm run typecheck`.
+Outros comandos: `npm run lint`, `npm run typecheck`. O `typecheck` roda `next typegen` antes do `tsc`, porque `PageProps` e `LayoutProps` são tipos globais gerados pelo Next em `.next/types` (num clone novo eles ainda não existem e o `tsc` sozinho falha).
 
 ## Variáveis de ambiente
 

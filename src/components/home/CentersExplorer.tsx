@@ -48,11 +48,26 @@ export function CentersExplorer({ centers }: { centers: Center[] }) {
               tabIndex={selected ? 0 : -1}
               onClick={() => setIndex(i)}
               className={cn(
-                "group flex min-h-14 items-baseline justify-between gap-4 border-b border-white/12 py-4 text-left transition-colors",
+                "group relative flex min-h-14 items-baseline justify-between gap-4 border-b border-white/12 py-4 text-left transition-colors",
                 selected ? "text-white" : "text-white/55 hover:text-white/85",
               )}
             >
-              <span className="font-display text-[1.375rem] leading-tight md:text-[1.6rem]">{item.name}</span>
+              {selected && (
+                <motion.span
+                  layoutId="centro-ativo"
+                  aria-hidden="true"
+                  className="absolute inset-x-0 -bottom-px h-0.5 rounded-full bg-leaf-400"
+                  transition={reduce ? { duration: 0 } : { type: "spring", stiffness: 420, damping: 38 }}
+                />
+              )}
+              <span
+                className={cn(
+                  "font-display text-[1.375rem] leading-tight transition-transform duration-500 ease-[var(--ease-out-expo)] md:text-[1.6rem]",
+                  selected ? "translate-x-2" : "group-hover:translate-x-1",
+                )}
+              >
+                {item.name}
+              </span>
               <span className={cn("shrink-0 text-sm tabular", selected ? "text-leaf-400" : "text-white/45")}>{item.city}</span>
             </button>
           );
@@ -75,7 +90,12 @@ export function CentersExplorer({ centers }: { centers: Center[] }) {
           </AnimatePresence>
         </div>
         <div className="mt-7 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
-          <div>
+          <motion.div
+            key={c.slug}
+            initial={reduce ? false : { opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          >
             <p className="flex items-center gap-2 text-sm text-white/65">
               <MapPin aria-hidden="true" className="size-4 text-leaf-400" />
               {c.city}, MT{c.founded ? ` · criado em ${c.founded}` : ""}
@@ -88,7 +108,7 @@ export function CentersExplorer({ centers }: { centers: Center[] }) {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
           <Link
             href={`/centros-experimentais/${c.slug}`}
             className="group/btn inline-flex min-h-11 items-center gap-2 self-start rounded-full bg-white px-5 py-2.5 font-medium text-forest-950 transition-[background-color,transform] hover:bg-leaf-100 active:scale-[0.97] md:self-end"

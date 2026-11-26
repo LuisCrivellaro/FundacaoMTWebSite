@@ -22,7 +22,7 @@ export default function LabsPage() {
         image={media.aerialSede}
       />
       <div className="wrap pb-24 md:pb-32">
-        <ul className="grid gap-5 lg:grid-cols-3">
+        <ul className="reveal-group grid gap-5 lg:grid-cols-3">
           {labs.map((l) => (
             <li key={l.slug}>
               <Link

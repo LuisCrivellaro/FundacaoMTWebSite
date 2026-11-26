@@ -17,7 +17,7 @@ export function Knowledge() {
         />
 
         <div className="mt-14 grid gap-5 lg:grid-cols-12">
-          <ul className="divide-y divide-sand-300 rounded-[var(--radius-lg)] bg-white px-6 ring-1 ring-line/60 md:px-8 lg:col-span-7">
+          <ul className="reveal divide-y divide-sand-300 rounded-[var(--radius-lg)] bg-white px-6 ring-1 ring-line/60 md:px-8 lg:col-span-7">
             {docs.map((p) => (
               <li key={p.href}>
                 <a href={p.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-5 py-6">
@@ -33,7 +33,7 @@ export function Knowledge() {
             ))}
           </ul>
 
-          <div className="grid gap-5 lg:col-span-5">
+          <div className="reveal-group grid gap-5 lg:col-span-5">
             <div id="area-tecnica" className="flex flex-col rounded-[var(--radius-lg)] bg-forest-900 p-7 text-white md:p-8">
               <Lock aria-hidden="true" className="size-6 text-leaf-400" strokeWidth={1.75} />
               <p className="mt-5 font-display text-[1.6rem] leading-tight">Informações técnicas por área</p>
