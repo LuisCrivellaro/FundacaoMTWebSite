@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, MapPin } from "lucide-react";
-import { getEventSplit } from "@/content/events";
+import { getEventSplit } from "@/content/event-split";
 import { news } from "@/content/news";
 import { SectionHeading } from "@/components/ui/Primitives";
 import { ButtonLink, TextLink } from "@/components/ui/Button";

@@ -79,11 +79,16 @@ export function ContactForm({ details }: { details: Record<string, Option[]> }) 
       focusFirst(e);
       return;
     }
-    setStatus({ kind: "sending" });
     const subjectLabel = SUBJECTS.find((x) => x.value === subject)?.label ?? "Contato";
     const mailto = `mailto:${contact.email}?subject=${encodeURIComponent(`[Site] ${subjectLabel}`)}&body=${encodeURIComponent(
       `${String(fd.get("mensagem") ?? "")}\n\n${String(fd.get("nome") ?? "")}\n${String(fd.get("telefone") ?? "")}\n${String(fd.get("cidade") ?? "")}`,
     )}`;
+    // Build estático (Netlify Drop): não existe /api/contato. Vai direto às alternativas, sem fingir envio.
+    if (process.env.NEXT_PUBLIC_STATIC_EXPORT === "1") {
+      setStatus({ kind: "fallback", reason: "not_configured", mailto });
+      return;
+    }
+    setStatus({ kind: "sending" });
     try {
       const res = await fetch("/api/contato", {
         method: "POST",

@@ -45,3 +45,7 @@ next-env.d.ts
 
 # ferramentas locais
 .taste-skill/
+
+# build estático para o Netlify Drop (contém as fontes do Fontshare e cópias otimizadas das fotos)
+/netlify-drop/
+/.cache/

@@ -33,6 +33,7 @@ Quando o site novo assumir `www.fundacaomt.com.br`, o sistema atual (Laravel) pr
 - Validação no navegador e no servidor (nome, e-mail, telefone opcional com DDD, assunto, mensagem ≥ 10 caracteres, consentimento LGPD).
 - Anti-spam: campo-armadilha `website` e limite de 5 envios a cada 10 minutos por IP (memória do processo; em várias instâncias, usar um armazenamento compartilhado ou um serviço como Turnstile).
 - Entrega: se `CONTACT_WEBHOOK_URL` estiver definida, o JSON é enviado por POST (timeout de 8 s). Serve para RD Station (via automação), Make, Zapier ou um endpoint da Fundação.
+- No build estático para o Netlify Drop (`npm run build:netlify`) não existe API: o formulário valida os campos e vai direto às alternativas (e-mail com texto preenchido e WhatsApp). Ver `DEPLOY_NETLIFY_DROP.md`.
 - Sem `CONTACT_WEBHOOK_URL`, a API responde **503** e o formulário mostra "O envio direto pelo site ainda não está ativo", com e-mail (texto já preenchido) e WhatsApp. **Nunca aparece "mensagem enviada" sem envio real.**
 
 Campos enviados: `nome, email, telefone, cidade, assunto, detalhe, mensagem, consentimento, origem, enviadoEm`. Os assuntos são `servico, pesquisa, laboratorio, visita, evento, imprensa, infraestrutura, outro`; o `detalhe` é o serviço, a área, o centro ou o laboratório escolhido, para roteamento.

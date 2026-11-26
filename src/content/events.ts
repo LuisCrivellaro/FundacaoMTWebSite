@@ -1,4 +1,3 @@
-import { cacheLife } from "next/cache";
 import data from "./generated/events.json";
 
 /** Eventos do Programa de Difusão de Tecnologia — fonte: /eventos/* do site oficial. */
@@ -72,11 +71,11 @@ export function getEvent(slug: string) {
   return events.find((e) => e.slug === slug);
 }
 
-/** Separa próximos e anteriores com base na data de hoje (cache de 1 hora). */
-export async function getEventSplit() {
-  "use cache";
-  cacheLife("hours");
-  const today = new Date().toISOString().slice(0, 10);
+/**
+ * Separa próximos e anteriores a partir de uma data (AAAA-MM-DD).
+ * Para a data de hoje, use `getEventSplit` de `@/content/event-split` (com cache de 1 hora).
+ */
+export function splitEvents(today: string) {
   const upcoming = events.filter((e) => e.date && e.date >= today).sort((a, b) => (a.sortDate > b.sortDate ? 1 : -1));
   const past = events.filter((e) => !(e.date && e.date >= today));
   return { today, upcoming, past };

@@ -3,7 +3,8 @@ import { Suspense } from "react";
 import { PageHeader } from "@/components/ui/Primitives";
 import { ButtonLink } from "@/components/ui/Button";
 import { EventsBrowser } from "@/components/EventsBrowser";
-import { events, getEventSplit, seriesOf } from "@/content/events";
+import { events, seriesOf } from "@/content/events";
+import { getEventSplit } from "@/content/event-split";
 import { media } from "@/content/media";
 
 export const metadata: Metadata = {
