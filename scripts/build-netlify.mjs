@@ -147,15 +147,22 @@ async function download(key, url) {
   const ext = (path.extname(new URL(url).pathname) || ".img").toLowerCase();
   const file = path.join(CACHE, key + ext);
   if (fs.existsSync(file) && fs.statSync(file).size > 0) return fs.readFileSync(file);
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  // O servidor oficial limita requisições (HTTP 429): poucas conexões e espera crescente.
+  for (let attempt = 1; attempt <= 6; attempt++) {
     try {
       const res = await fetch(url, { signal: AbortSignal.timeout(90_000), headers: { "User-Agent": "Mozilla/5.0 (static site build)" } });
+      if (res.status === 429 || res.status === 503) {
+        const wait = Number(res.headers.get("retry-after")) || 5 * attempt;
+        if (attempt === 6) throw new Error(`HTTP ${res.status}`);
+        await new Promise((r) => setTimeout(r, wait * 1000));
+        continue;
+      }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const buf = Buffer.from(await res.arrayBuffer());
       fs.writeFileSync(file, buf);
       return buf;
     } catch (e) {
-      if (attempt === 3) throw e;
+      if (attempt === 6) throw e;
       await new Promise((r) => setTimeout(r, 1500 * attempt));
     }
   }
@@ -198,7 +205,7 @@ async function worker() {
     if (done % 25 === 0 || done === sources.size) log(`imagens: ${done}/${sources.size}`);
   }
 }
-await Promise.all(Array.from({ length: 6 }, worker));
+await Promise.all(Array.from({ length: 2 }, worker));
 
 // ---------------------------------------------------------------------------
 // 3. _redirects, _headers e robots.txt

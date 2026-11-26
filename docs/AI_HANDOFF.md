@@ -6,15 +6,17 @@
 
 ## 0. Retomada rápida (leia primeiro)
 
-**Tarefa em andamento:** preparar uma **prévia estática para publicar no Netlify Drop** (https://app.netlify.com/drop, arrastar e soltar uma pasta). O usuário vai hospedar a prévia só por um dia. Pedido: "prepare toda a pasta para isso".
+**Última tarefa (concluída em 26/11/2026):** preparar uma **prévia estática para publicar no Netlify Drop** (https://app.netlify.com/drop, arrastar e soltar uma pasta). O usuário vai hospedar a prévia só por um dia. Pedido: "prepare toda a pasta para isso".
 
 **Branch e commits**
 - Branch de trabalho: `feat/animacoes-e-fotos` (criada a partir de `main`). **Não fazer merge na `main` sem autorização do usuário. Não usar force push.**
 - `main` = `origin/main` = `54ff8d9` (site completo + pesquisa).
 - `1d0e480` (na branch): animações ao rolar, sete fotos novas, typecheck com `next typegen`, entrada `site-windows` no launch.json, docs.
-- O commit deste handoff vem logo depois de `1d0e480`. **O código do build estático (lista no §0.2) pode ainda não estar no GitHub**: se `scripts/build-netlify.mjs` não existir no clone, ele ficou só na máquina anterior; recrie a partir do §0.2.
+- `660aceb`: handoff. `390c319`: build estático para o Netlify Drop. O commit seguinte: downloads com limite (HTTP 429) e docs finais. Tudo enviado para `origin/feat/animacoes-e-fotos`.
 
-**Próxima ação exata**
+**Estado:** `npm run build:netlify` passa e gera `netlify-drop/` com 2.631 arquivos (90,8 MB), 216 fotos convertidas sem falhas e 100 redirecionamentos. Testado com servidor local que imita o Netlify: home, `/eventos` → `/eventos/` (301), notícia, contato, `/sobre-nos` → `/a-fundacao/`, `/area-experimental/cad-norte` → `/centros-experimentais/cad-norte/`, 404, `robots.txt`, CSS, fontes e WebP com 200. **Não testados:** o upload real no Netlify, visual no navegador da pasta estática, o build normal depois das mudanças (só o typecheck rodou dentro do build estático) e o clique no envio do formulário no estático.
+
+**Próxima ação exata** (para gerar de novo ou continuar)
 1. `npm install` (num clone novo) e confirme que existem `scripts/build-netlify.mjs`, `src/lib/static-image-loader.ts`, `src/content/event-split.ts`, `src/content/event-split.static.ts` e `docs/DEPLOY_NETLIFY_DROP.md`.
 2. Confirme que o código-fonte está íntegro (o script altera arquivos temporariamente; ver §0.3): `git status` não deve mostrar `src/app/api` ausente, `robots.ts`/`sitemap.ts` ausentes nem `instant` removido das rotas `[slug]`. Se mostrar, rode o script uma vez (ele restaura no início) ou `git checkout -- src/app`.
 3. Pare o `npm run dev`, rode `npm run build:netlify` e leia o fim da saída (`[netlify] pronto: netlify-drop/ com N arquivos, X MB`).
@@ -31,7 +33,8 @@
 | 2 | `robots.txt`: export exige `dynamic = "force-static"`, incompatível com `cacheComponents` | `robots.ts` e `sitemap.ts` saem do build estático (renomeados para `*.off`); script escreve `robots.txt` próprio; prévia sem sitemap |
 | 3 | `Invariant: PPR cannot be enabled in export mode` | No modo estático, `cacheComponents` e `partialPrefetching` desligados; `"use cache"` isolado em `event-split.ts` e trocado por `event-split.static.ts` via `turbopack.resolveAlias` |
 | 4 | `Route segment config "instant" requires nextConfig.cacheComponents` (6 rotas `[slug]`) | Script remove a linha `export const instant = false;` durante o build, com cópia em `.cache/build-netlify-backup/`, e restaura no fim |
-| 5 | Em execução no momento deste handoff | Resultado ainda não verificado |
+| 5 | Passou, mas 57 fotos falharam com HTTP 429 (limite do servidor oficial) | Downloads com 2 conexões, até 6 tentativas e `Retry-After` |
+| 6 | Passou sem falhas | — |
 
 Possíveis próximos obstáculos: o `turbopack.resolveAlias` não substituir `@/content/event-split` (aí o build reclama de `"use cache"`; alternativa: o script trocar o arquivo temporariamente, como faz com `instant`); páginas que leem `searchParams` no servidor (hoje nenhuma; a busca e os filtros são client-side com `useSearchParams` dentro de `Suspense`).
 
@@ -41,7 +44,7 @@ Possíveis próximos obstáculos: o `turbopack.resolveAlias` não substituir `@/
   1. Restaura sobras de execução interrompida e baixa as fontes (`scripts/fetch-fonts.mjs`).
   2. Apaga `out/` e `.next/dev/types`. Renomeia `src/app/api` → `src/app/_api` (pasta privada), `robots.ts` e `sitemap.ts` → `*.off` e tira o `instant` das rotas `[slug]`.
   3. Roda `next build` com `STATIC_EXPORT=1` e `NEXT_PUBLIC_STATIC_EXPORT=1`. Restaura tudo no `finally` e no SIGINT/SIGTERM.
-  4. Procura URLs de fotos `fundacaomt.com.br` nos `.html/.txt/.js/.json` de `out/`. Baixa os originais (cache em `.cache/fotos-originais/`, 6 em paralelo, 3 tentativas) e gera WebP q72 com `sharp` em `out/img/<largura>/<chave>.webp`, nas larguras 96, 256, 640, 1080, 1600 e 2048, sem ampliar.
+  4. Procura URLs de fotos `fundacaomt.com.br` nos `.html/.txt/.js/.json` de `out/`. Baixa os originais (cache em `.cache/fotos-originais/`, 2 em paralelo, até 6 tentativas com espera, por causa do HTTP 429) e gera WebP q72 com `sharp` em `out/img/<largura>/<chave>.webp`, nas larguras 96, 256, 640, 1080, 1600 e 2048, sem ampliar.
   5. Escreve `out/_redirects` (de `src/content/redirects.ts`, com barra final; `:slug*` vira a linha pura + `/*`), `out/_headers` (`X-Robots-Tag: noindex, nofollow`, cache longo em `/_next/static/*` e 7 dias em `/img/*`) e `out/robots.txt` (`Disallow: /`).
   6. Copia `out/` para `netlify-drop/`.
 - `src/lib/static-image-loader.ts`: loader custom (`/img/<w>/<chave>.webp`; chave = FNV-1a 32 bits + tamanho em base 36), `isOptimizable` (só `fundacaomt.com.br`, sem SVG; YouTube passa direto) e as larguras. O script importa este mesmo arquivo (Node 24 roda TypeScript simples), então a chave é a mesma dos dois lados.
@@ -105,7 +108,7 @@ Fora do site de propósito: área logada, inscrição e compra (continuam no sis
 
 ## 7. Pendências e próximos passos
 
-**Desta tarefa:** terminar o §0 (build estático passando, teste local, commit e push).
+**Desta tarefa:** rodar o build normal (`npm run typecheck`, `npx eslint src`, `npm run build`) para confirmar que nada mudou fora do modo estático; olhar a pasta estática no navegador; o usuário publica arrastando `netlify-drop/` no Netlify Drop.
 
 **Depois:**
 1. Revisar com a Fundação: textos, fotos, pendências da `AUDITORIA_FINAL.md §6`. Combinar com ela a prévia pública.
