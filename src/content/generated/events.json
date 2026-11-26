@@ -1,0 +1,1499 @@
+[
+ {
+  "date": "2026-12-03",
+  "lots": [
+   {
+    "lot": "LOTE PROMOCIONAL",
+    "label": "Ingressos limitados",
+    "price": "697,00",
+    "status": "ENCERRADO"
+   },
+   {
+    "lot": "1º LOTE",
+    "label": "Presencial",
+    "price": "997,00",
+    "status": "ENCERRADO"
+   },
+   {
+    "lot": "2º LOTE",
+    "label": "Presencial",
+    "price": "1.097,00",
+    "status": "FAÇA SUA INSCRIÇÃO"
+   },
+   {
+    "lot": "3º LOTE",
+    "label": "Presencial",
+    "price": "1.197,00",
+    "status": "EM BREVE"
+   }
+  ],
+  "slug": "vii-encontro-tecnico-de-milho-932f",
+  "title": "VII Encontro Técnico de Milho",
+  "info": "03 de Dezembro de 2026",
+  "description": [],
+  "startDate": "2026-10-10T00:00:00-04:00",
+  "endDate": "2026-10-10T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1792692068-j0X6Fe0fGv.png",
+  "offers": [
+   {
+    "name": "Ingressos limitados",
+    "price": 697.0,
+    "validFrom": "2026-09-23T00:00:00-04:00"
+   },
+   {
+    "name": "Presencial",
+    "price": 997.0,
+    "validFrom": "2026-11-01T00:00:00-04:00"
+   },
+   {
+    "name": "Presencial",
+    "price": 1097.0,
+    "validFrom": "2026-11-21T00:00:00-04:00"
+   },
+   {
+    "name": "Presencial",
+    "price": 1197.0,
+    "validFrom": "2026-11-30T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/vii-encontro-tecnico-de-milho-932f"
+ },
+ {
+  "date": "2026-08-06",
+  "lots": [],
+  "slug": "18o-encontro-tecnico-de-algodao-2d9b",
+  "title": "18º Encontro Técnico de Algodão",
+  "info": "05 e 06 de agosto de 2026 - Presencial/Online",
+  "description": [],
+  "startDate": "2026-08-05T00:00:00-04:00",
+  "endDate": "2026-08-05T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1785359589-WDjx4oYjGk.png",
+  "offers": [
+   {
+    "name": "PROMOCIONAL",
+    "price": 1400.0,
+    "validFrom": "2026-05-12T00:00:00-04:00"
+   },
+   {
+    "name": "Presencial",
+    "price": 2300.0,
+    "validFrom": "2026-08-05T00:00:00-04:00"
+   },
+   {
+    "name": "1º LOTE",
+    "price": 1800.0,
+    "validFrom": "2026-07-02T00:00:00-04:00"
+   },
+   {
+    "name": "2º LOTE",
+    "price": 2100.0,
+    "validFrom": "2026-07-12T00:00:00-04:00"
+   },
+   {
+    "name": "3º LOTE",
+    "price": 2300.0,
+    "validFrom": "2026-07-22T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 450.0,
+    "validFrom": "2026-07-01T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 650.0,
+    "validFrom": "2026-07-12T00:00:00-04:00"
+   },
+   {
+    "name": "VOUCHER",
+    "price": 2300.0,
+    "validFrom": "2026-08-03T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 850.0,
+    "validFrom": "2026-07-22T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/18o-encontro-tecnico-de-algodao-2d9b"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-mt-em-campo-cotton-day-2026-04db",
+  "title": "Fundação MT em Campo - Cotton Day - 2026",
+  "info": "Sapezal - MT | CAD Oeste",
+  "description": [
+   "O Fundação MT em Campo - Cotton Day é um evento técnico voltado exclusivamente à cultura do algodão, reunindo conhecimento prático, inovação e troca de experiências diretamente no campo.",
+   "Realizado em Sapezal-MT, no CAD Oeste, o encontro proporciona aos participantes uma imersão nas principais estratégias de manejo, tecnologias e resultados de pesquisa aplicados à cotonicultura. Tudo isso conduzido por pesquisadores da Fundação MT, que levam ao campo informações confiáveis, atualizadas e diretamente conectadas à realidade do produtor.",
+   "Com inscrição gratuita, o Cotton Day é uma oportunidade para profissionais do agro se atualizarem, ampliarem sua visão técnica e fortalecerem conexões dentro da cadeia do algodão."
+  ],
+  "startDate": "2026-06-10T00:00:00-04:00",
+  "endDate": "2026-06-10T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1780414094-DPh4t7dAh6.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-mt-em-campo-cotton-day-2026-04db"
+ },
+ {
+  "date": "2026-05-14",
+  "lots": [],
+  "slug": "26o-encontro-tecnico-de-soja-26f8",
+  "title": "26º Encontro Técnico de Soja",
+  "info": "12 a 14 de Maio de 2026 - Presencial/Online",
+  "description": [],
+  "startDate": "2026-05-12T00:00:00-04:00",
+  "endDate": "2026-05-12T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1777995621-VBWs1ZxEVQ.png",
+  "offers": [
+   {
+    "name": "PRESENCIAL",
+    "price": 2300.0,
+    "validFrom": "2026-04-28T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 650.0,
+    "validFrom": "2026-04-11T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2159.0,
+    "validFrom": "2026-04-10T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 450.0,
+    "validFrom": "2026-03-09T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 1859.0,
+    "validFrom": "2026-03-09T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 1659.0,
+    "validFrom": "2026-02-17T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 850.0,
+    "validFrom": "2026-04-29T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/26o-encontro-tecnico-de-soja-26f8"
+ },
+ {
+  "date": "2025-11-27",
+  "lots": [],
+  "slug": "6o-encontro-tecnico-de-milho-aac9",
+  "title": "6º Encontro Técnico de Milho",
+  "info": "27 de novembro de 2025 - Presencial",
+  "description": [
+   "Confira as fotos do último",
+   "evento"
+  ],
+  "startDate": "2025-11-27T00:00:00-04:00",
+  "endDate": "2025-11-27T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1763036723-hQ1SXv7A78.png",
+  "offers": [
+   {
+    "name": "100% Presencial",
+    "price": 1100.0,
+    "validFrom": "2025-11-01T00:00:00-04:00"
+   },
+   {
+    "name": "100% Presencial",
+    "price": 1000.0,
+    "validFrom": "2025-10-21T00:00:00-04:00"
+   },
+   {
+    "name": "100% Presencial",
+    "price": 800.0,
+    "validFrom": "2025-10-04T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/6o-encontro-tecnico-de-milho-aac9"
+ },
+ {
+  "date": "2025-10-04",
+  "lots": [],
+  "slug": "4o-encontro-tecnico-de-pecuaria-022d",
+  "title": "4º Encontro Técnico de Pecuária",
+  "info": "04/10/2025 - 100% Presencial",
+  "description": [],
+  "startDate": "2025-10-04T00:00:00-04:00",
+  "endDate": "2025-10-04T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1759758081-wt7zC3JVBz.png",
+  "offers": [
+   {
+    "name": "PRESENCIAL",
+    "price": 100.0,
+    "validFrom": "2025-08-01T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 150.0,
+    "validFrom": "2025-08-25T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 250.0,
+    "validFrom": "2025-09-20T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/4o-encontro-tecnico-de-pecuaria-022d"
+ },
+ {
+  "date": "2025-09-04",
+  "lots": [],
+  "slug": "17o-encontro-tecnico-de-algodao-20ef",
+  "title": "17º Encontro Técnico de Algodão",
+  "info": "02 a 04 de setembro de 2025 - Presencial/Online",
+  "description": [],
+  "startDate": "2025-09-02T00:00:00-04:00",
+  "endDate": "2025-09-02T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1756740551-J6QIhb5kok.png",
+  "offers": [
+   {
+    "name": "2º LOTE",
+    "price": 2200.0,
+    "validFrom": "2025-07-27T00:00:00-04:00"
+   },
+   {
+    "name": "PROMOCIONAL",
+    "price": 1100.0,
+    "validFrom": "2025-07-27T00:00:00-04:00"
+   },
+   {
+    "name": "PROMOCIONAL",
+    "price": 1800.0,
+    "validFrom": "2025-05-13T00:00:00-04:00"
+   },
+   {
+    "name": "1º LOTE",
+    "price": 2000.0,
+    "validFrom": "2025-06-25T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 1300.0,
+    "validFrom": "2025-08-16T00:00:00-04:00"
+   },
+   {
+    "name": "3º LOTE",
+    "price": 2300.0,
+    "validFrom": "2025-08-16T00:00:00-04:00"
+   },
+   {
+    "name": "Lote Extra",
+    "price": 1750.0,
+    "validFrom": "2025-09-08T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/17o-encontro-tecnico-de-algodao-20ef"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-mt-em-campo-2a-safra-2025-5ac2",
+  "title": "Fundação MT em Campo 2ª Safra 2025",
+  "info": "",
+  "description": [],
+  "startDate": "2025-06-10T00:00:00-04:00",
+  "endDate": "2025-06-10T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1749044650-qWrmrk06Es.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-mt-em-campo-2a-safra-2025-5ac2"
+ },
+ {
+  "date": "2025-05-15",
+  "lots": [],
+  "slug": "25o-encontro-tecnico-de-soja-5a6b",
+  "title": "25º Encontro Técnico de Soja",
+  "info": "13 a 15 de maio - Presencial/online",
+  "description": [],
+  "startDate": "2025-05-13T00:00:00-04:00",
+  "endDate": "2025-05-13T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1745839775-FpuQGJ6uHO.png",
+  "offers": [
+   {
+    "name": "PRESENCIAL",
+    "price": 1800.0,
+    "validFrom": "2025-01-15T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2000.0,
+    "validFrom": "2025-02-01T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2200.0,
+    "validFrom": "2025-03-01T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2300.0,
+    "validFrom": "2025-05-01T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 450.0,
+    "validFrom": "2025-04-22T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 650.0,
+    "validFrom": "2025-04-30T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 850.0,
+    "validFrom": "2025-05-08T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/25o-encontro-tecnico-de-soja-5a6b"
+ },
+ {
+  "date": "2025-03-19",
+  "lots": [],
+  "slug": "escola-de-herbicidas-v-edicao-62c0",
+  "title": "Escola de Herbicidas - V Edição",
+  "info": "17, 18 e 19 de Março",
+  "description": [],
+  "startDate": "2025-03-17T00:00:00-04:00",
+  "endDate": "2025-03-17T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1739562436-6lZPiIW4iT.png",
+  "offers": [
+   {
+    "name": "TURMA 4",
+    "price": 1200.0,
+    "validFrom": "2025-02-13T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 3",
+    "price": 1200.0,
+    "validFrom": "2025-02-13T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 1",
+    "price": 1200.0,
+    "validFrom": "2025-02-13T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 2",
+    "price": 1200.0,
+    "validFrom": "2025-02-13T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/escola-de-herbicidas-v-edicao-62c0"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-mt-em-campo-safra-2025-d0ba",
+  "title": "Fundação MT em Campo - Safra 2025",
+  "info": "Etapa Sorriso-MT | Etapa Itiquira-MT",
+  "description": [],
+  "startDate": "2025-02-05T00:00:00-04:00",
+  "endDate": "2025-02-05T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1734642934-1SB7rSpjQZ.png",
+  "offers": [
+   {
+    "name": "Lote Promocional",
+    "price": 69.9,
+    "validFrom": "2024-12-05T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 1",
+    "price": 89.9,
+    "validFrom": "2025-01-01T00:00:00-04:00"
+   },
+   {
+    "name": "Lote Promocional",
+    "price": 69.9,
+    "validFrom": "2024-12-05T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 1",
+    "price": 89.9,
+    "validFrom": "2025-01-01T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-mt-em-campo-safra-2025-d0ba"
+ },
+ {
+  "date": "2024-11-29",
+  "lots": [],
+  "slug": "v-encontro-tecnico-de-milho-fffd",
+  "title": "V Encontro Técnico de Milho",
+  "info": "28 e 29 de Novembro",
+  "description": [],
+  "startDate": "2024-11-28T00:00:00-04:00",
+  "endDate": "2024-11-28T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1728596890-1ud4Sjhv9m.png",
+  "offers": [
+   {
+    "name": "ESQUENTA BLACK FRIDAY 11.11",
+    "price": 500.0,
+    "validFrom": "2024-11-15T00:00:00-04:00"
+   },
+   {
+    "name": "ESQUENTA BLACK FRIDAY 11.11",
+    "price": 500.0,
+    "validFrom": "2024-11-11T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 3",
+    "price": 1100.0,
+    "validFrom": "2024-11-15T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 1",
+    "price": 900.0,
+    "validFrom": "2024-10-10T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 2",
+    "price": 1000.0,
+    "validFrom": "2024-10-25T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/v-encontro-tecnico-de-milho-fffd"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "live-e-hora-de-cuidar-651b",
+  "title": "Live: É hora de cuidar",
+  "info": "Um olhar no presente para cuidar do futuro",
+  "description": [
+   "Momento de levar para o produtor informações importantes e relevantes para os cuidados pós-plantio. Onde pesquisadores da Fundação MT estarão reunidos para abordar assuntos a respeito do manejo de Pragas Iniciais e Nematoides."
+  ],
+  "startDate": "2024-10-10T00:00:00-04:00",
+  "endDate": "2024-10-10T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1727382285-Ndz0yq5QF6.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-e-hora-de-cuidar-651b"
+ },
+ {
+  "date": "2024-09-19",
+  "lots": [],
+  "slug": "iii-encontro-tecnico-de-pecuaria-71b6",
+  "title": "III Encontro Técnico de Pecuária",
+  "info": "19 de Setembro de 2024",
+  "description": [],
+  "startDate": "2024-09-19T00:00:00-04:00",
+  "endDate": "2024-09-19T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1726519112-im1S2xpyzp.png",
+  "offers": [
+   {
+    "name": "PRESENCIAL",
+    "price": 250.0,
+    "validFrom": "2024-08-12T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 212.5,
+    "validFrom": "2024-09-15T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/iii-encontro-tecnico-de-pecuaria-71b6"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "xvi-encontro-tecnico-de-algodao-8f1f",
+  "title": "XVI Encontro Técnico de Algodão",
+  "info": "31/julho a 02/agosto - Presencial/Online",
+  "description": [],
+  "startDate": "2024-07-31T00:00:00-04:00",
+  "endDate": "2024-07-31T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1721744289-SvEgSjbNMO.png",
+  "offers": [
+   {
+    "name": "PARA PARTICIPANTES DO XXIV ETS",
+    "price": 2200.0,
+    "validFrom": "2024-05-27T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2400.0,
+    "validFrom": "2024-06-14T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2500.0,
+    "validFrom": "2024-07-02T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 800.0,
+    "validFrom": "2024-05-27T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 1300.0,
+    "validFrom": "2024-06-27T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2300.0,
+    "validFrom": "2024-05-27T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/xvi-encontro-tecnico-de-algodao-8f1f"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-mt-em-campo-2a-safra-2024-55e3",
+  "title": "Fundação MT em Campo 2ª Safra 2024",
+  "info": "",
+  "description": [],
+  "startDate": "2024-06-04T00:00:00-04:00",
+  "endDate": "2024-06-04T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1711399532-k2gamUJH4W.png",
+  "offers": [
+   {
+    "name": "Sapezal",
+    "price": 60.0,
+    "validFrom": "2024-03-19T00:00:00-04:00"
+   },
+   {
+    "name": "Sapezal",
+    "price": 60.0,
+    "validFrom": "2024-03-19T00:00:00-04:00"
+   },
+   {
+    "name": "Sorriso",
+    "price": 60.0,
+    "validFrom": "2024-03-19T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-mt-em-campo-2a-safra-2024-55e3"
+ },
+ {
+  "date": "2024-05-17",
+  "lots": [],
+  "slug": "xxiv-encontro-tecnico-de-soja-2d45",
+  "title": "XXIV Encontro Técnico de Soja",
+  "info": "14 a 17 de maio - Presencial/online",
+  "description": [],
+  "startDate": "2024-05-14T00:00:00-04:00",
+  "endDate": "2024-05-14T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1713556349-dMyv5CEDju.png",
+  "offers": [
+   {
+    "name": "PRESENCIAL",
+    "price": 2300.0,
+    "validFrom": "2024-03-15T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2500.0,
+    "validFrom": "2024-04-16T00:00:00-04:00"
+   },
+   {
+    "name": "PRESENCIAL",
+    "price": 2100.0,
+    "validFrom": "2024-02-14T00:00:00-04:00"
+   },
+   {
+    "name": "ONLINE",
+    "price": 1200.0,
+    "validFrom": "2024-02-14T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/xxiv-encontro-tecnico-de-soja-2d45"
+ },
+ {
+  "date": "2024-03-27",
+  "lots": [],
+  "slug": "escola-de-herbicidas-iv-edicao",
+  "title": "Escola de Herbicidas IV edição",
+  "info": "25, 26 e 27 de março",
+  "description": [
+   "A Escola de Herbicidas é um novo conceito de treinamento onde o objetivo é levar informações técnicas da área de Herbicidas e Plantas Daninhas de forma dinâmica e interativa.",
+   "Prepare-se para uma imersão de 4 horas no mundo dos herbicidas e das plantas daninhas.",
+   "O que a Escola de Herbicidas oferecerá no campo:",
+   "Aplicação em dois estágios de desenvolvimento das plantas daninhas;",
+   "Aplicação em área gradeada para observação de residual de herbicidas;",
+   "Aplicação em pré-emergência de 5 culturas visando avaliar a seletividade em pré-emergência;",
+   "Aplicação em pós-emergência de 5 culturas visando avaliar a seletividade em pós-emergência;",
+   "Mistura de herbicidas;",
+   "Aplicação de herbicidas do mercado com registro para soja, milho e algodão;",
+   "Serão abordados 12 mecanismos de ação.",
+   "Carga horária: 4 horas",
+   "Horário: 7h00 às 11h30"
+  ],
+  "startDate": "2024-03-25T00:00:00-04:00",
+  "endDate": "2024-03-25T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1708431241-xCoScLKIMS.png",
+  "offers": [
+   {
+    "name": "TURMA 1",
+    "price": 1200.0,
+    "validFrom": "2024-02-20T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 2",
+    "price": 1200.0,
+    "validFrom": "2024-02-20T00:00:00-04:00"
+   },
+   {
+    "name": "Turma Exclusiva Ihara",
+    "price": 1200.0,
+    "validFrom": "2024-03-08T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/escola-de-herbicidas-iv-edicao"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-em-campo-safra-2024-be48",
+  "title": "Fundação em Campo Safra 2024",
+  "info": "TAXA INSCRIÇÃO: 25% do valor das inscrições serão revertidos para instituições filantrópicas localizadas na região dos respectivos dia de campo.",
+  "description": [],
+  "startDate": "2024-01-10T00:00:00-04:00",
+  "endDate": "2024-01-10T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1702417465-AWjo7JUqsk.png",
+  "offers": [
+   {
+    "name": "Itiquira",
+    "price": 60.0,
+    "validFrom": "2023-12-12T00:00:00-04:00"
+   },
+   {
+    "name": "Itiquira",
+    "price": 60.0,
+    "validFrom": "2023-12-12T00:00:00-04:00"
+   },
+   {
+    "name": "Sorriso",
+    "price": 60.0,
+    "validFrom": "2023-12-12T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-em-campo-safra-2024-be48"
+ },
+ {
+  "date": "2023-11-23",
+  "lots": [],
+  "slug": "iv-encontro-tecnico-milho-ee5d",
+  "title": "IV Encontro Técnico Milho",
+  "info": "22 e 23 de Novembro",
+  "description": [
+   "Evento com duração de 2 dias, conduzido por pesquisadores da Fundação MT e especialistas convidados para apresentação de resultados de pesquisa, com a finalidade de prover discussões técnicas para a cultura do milho."
+  ],
+  "startDate": "2023-11-22T00:00:00-04:00",
+  "endDate": "2023-11-22T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1694451888-8jUgWILwyn.jpg",
+  "offers": [
+   {
+    "name": "Lote 2",
+    "price": 1100.0,
+    "validFrom": "2023-09-21T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 3",
+    "price": 1200.0,
+    "validFrom": "2023-10-22T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 1",
+    "price": 900.0,
+    "validFrom": "2023-08-25T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/iv-encontro-tecnico-milho-ee5d"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "live-como-manejar-doencas-e-podridoes-em-condicoes-de-chuvas-irregulares-3ef8",
+  "title": "Live Como manejar doenças e podridões em condições de chuvas irregulares?",
+  "info": "",
+  "description": [],
+  "startDate": "2023-11-09T00:00:00-04:00",
+  "endDate": "2023-11-09T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1698850362-gPFRwdxAvA.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-como-manejar-doencas-e-podridoes-em-condicoes-de-chuvas-irregulares-3ef8"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "live-desafios-e-solucoes-no-manejo-spodoptera-frugiperda-c894",
+  "title": "Live Desafios e soluções no manejo Spodoptera Frugiperda",
+  "info": "Momento em que pesquisadores da Fundação MT e convidados estarão reunidos para abordar assuntos importantes a respeito do desafios no manejo de Spodoptera Frugiperda.",
+  "description": [],
+  "startDate": "2023-10-17T00:00:00-04:00",
+  "endDate": "2023-10-17T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1697637608-hJheBltODm.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-desafios-e-solucoes-no-manejo-spodoptera-frugiperda-c894"
+ },
+ {
+  "date": "2023-09-23",
+  "lots": [],
+  "slug": "ii-encontro-tecnico-pecuaria-de-corte-68a3",
+  "title": "II Encontro Técnico Pecuária de Corte",
+  "info": "23 de Setembro de 2023",
+  "description": [],
+  "startDate": "2023-09-23T00:00:00-04:00",
+  "endDate": "2023-09-23T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1694187460-SUmjsSjtgW.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/ii-encontro-tecnico-pecuaria-de-corte-68a3"
+ },
+ {
+  "date": "2023-08-17",
+  "lots": [],
+  "slug": "live-nematoides-no-sistema-de-producao-sojaalgodao-979b",
+  "title": "Live Nematoides no sistema de produção soja/algodão",
+  "info": "17 de agosto",
+  "description": [
+   "Momento em que pesquisadores da Fundação MT e convidados estarão reunidos para abordar assuntos importantes a respeito do Manejo de nematoides.",
+   "Transmissão pelo Youtube",
+   "19h (horário de Brasília)",
+   "Moderador",
+   "Luis Carlos Oliveira -",
+   "Gestor Marketing Comercial Fundação MT",
+   "Pesquisadora",
+   "Rosangela Silva -",
+   "Fundação MT",
+   "Pesquisadora",
+   "Tania Santos -",
+   "Fundação MT"
+  ],
+  "startDate": "2023-08-17T00:00:00-04:00",
+  "endDate": "2023-08-17T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1691778816-mo0AqvSbcz.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-nematoides-no-sistema-de-producao-sojaalgodao-979b"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-em-campo-2a-safra-2023-6454",
+  "title": "Fundação em Campo- 2ª Safra 2023",
+  "info": "Dia de campo com duração de meio período, conduzido pelos",
+  "description": [
+   "Pesquisadores da Fundação MT, para apresentação do",
+   "posicionamento da Fundação MT referente aos resultados de pesquisa, na ocasião",
+   "faremos visitas de ensaios a campo, com foco nos principais problemas e",
+   "soluções para o cultivo e manejo das culturas de milho e algodão 2ª safra nas",
+   "cidades de Sorriso e Sapezal.",
+   "﻿"
+  ],
+  "startDate": "2023-06-02T00:00:00-04:00",
+  "endDate": "2023-06-02T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1684259378-WIv8V7DUJ0.webp",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-em-campo-2a-safra-2023-6454"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "curso-de-nematologia-b9e3",
+  "title": "CURSO DE NEMATOLOGIA",
+  "info": "Conhecendo os nematoides de importância à cultura da soja e seu manejo",
+  "description": [
+   "Esse curso tem como objetivo, difundir conhecimento sobre os principais nematoides da cultura da soja, e seu manejo.",
+   "CONTEÚDO PROGRAMÁTICO",
+   "13/05/2023 (Teórico)",
+   "08:00 - 10:00",
+   "– Características dos principais nematoides de",
+   "importância a cultura da soja.",
+   "10:00 - 12:00 – Ciclo de vida dos nematoides e sintomas no",
+   "campo",
+   "Intervalo",
+   "13:00 - 15:00 – Interação nematoide /planta, princípios de",
+   "controle",
+   "15:00 - 17:00 – Coleta de amostras, cuidados no envio e"
+  ],
+  "startDate": "2023-04-27T00:00:00-04:00",
+  "endDate": "2023-04-27T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1682599152-j7nqSFvHw3.png",
+  "offers": [
+   {
+    "name": "PÚBLICO GERAL",
+    "price": 999.0,
+    "validFrom": "2023-04-27T00:00:00-04:00"
+   },
+   {
+    "name": "ESTUDANTES",
+    "price": 599.0,
+    "validFrom": "2023-04-27T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/curso-de-nematologia-b9e3"
+ },
+ {
+  "date": "2023-03-22",
+  "lots": [],
+  "slug": "escola-de-herbicidas-iii-edicao-52fa",
+  "title": "Escola de Herbicidas III edição",
+  "info": "20 a 22 de março",
+  "description": [
+   "A Escola de Herbicidas é um novo conceito de treinamento onde o objetivo é levar informações técnicas da área de Herbicidas e Plantas Daninhas de forma dinâmica e interativa.",
+   "Prepare-se para uma imersão de 4 horas no mundo dos herbicidas e das plantas daninhas.",
+   "O que a Escola de Herbicidas oferecerá no campo:",
+   "Aplicação em dois estágios de desenvolvimento das plantas daninhas;",
+   "Aplicação em área gradeada para observação de residual de herbicidas;",
+   "Aplicação em pré-emergência de 5 culturas visando avaliar a seletividade em pré-emergência;",
+   "Aplicação em pós-emergência de 5 culturas visando avaliar a seletividade em pós-emergência;",
+   "Mistura de herbicidas;",
+   "Aplicação de herbicidas do mercado com registro para soja, milho e algodão;",
+   "Serão abordados 12 mecanismos de ação.",
+   "Carga horária: 4 horas",
+   "Horário: 7h00 às 11h30"
+  ],
+  "startDate": "2023-03-20T00:00:00-04:00",
+  "endDate": "2023-03-20T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1675692659-OSzG1XqIL8.webp",
+  "offers": [
+   {
+    "name": "TURMA 1",
+    "price": 1100.0,
+    "validFrom": "2023-02-06T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 2",
+    "price": 1100.0,
+    "validFrom": "2023-02-06T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 3",
+    "price": 1100.0,
+    "validFrom": "2023-02-06T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 4",
+    "price": 1100.0,
+    "validFrom": "2023-02-08T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/escola-de-herbicidas-iii-edicao-52fa"
+ },
+ {
+  "date": "2023-03-01",
+  "lots": [],
+  "slug": "circuito-do-conhecimento-foco-em-ferrugem-asiatica-e942",
+  "title": "Circuito do Conhecimento - Foco em Ferrugem Asiática",
+  "info": "01 de março na Serra da Petrovina- MT",
+  "description": [
+   "Dia de campo para convidados com duração de meio período, conduzido por Pesquisadores da Fundação MT e Especialistas convidados, para apresentação do posicionamento da Fundação MT referente aos resultados de pesquisa e visita de ensaios a campo, com foco em avaliar os tratamentos de fungicidas para o controle de Ferrugem Asiática, seguido de discussão técnica científica na cultura da soja."
+  ],
+  "startDate": "2023-03-01T00:00:00-04:00",
+  "endDate": "2023-03-01T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1675859465-xBZ289yE2G.webp",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/circuito-do-conhecimento-foco-em-ferrugem-asiatica-e942"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "fundacao-em-campo-safra-2023-42f6",
+  "title": "Fundação em Campo- Safra 2023",
+  "info": "Evento conduzido por pesquisadores da Fundação MT e convidados, para apresentação de resultados de pesquisa, rodada técnica, dinâmica de maquina e vitrine de cultivares com foco na cultura da soja.",
+  "description": [],
+  "startDate": "2023-01-17T00:00:00-04:00",
+  "endDate": "2023-01-17T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1670510636-L6EVFRdiRK.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-em-campo-safra-2023-42f6"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "cenario-de-doencas-e-anomalia-nas-regioes-de-mato-grosso-d63d",
+  "title": "Cenário de doenças e anomalia nas regiões de Mato Grosso",
+  "info": "Um momento para se atualizar e acompanhar as últimas notícias sobre quebramento, anomalia e as doenças mancha alvo, cercospora e ferrugem asiática nas principais regiões do estado de Mato Grosso.",
+  "description": [
+   "Veja também análise geral, relato de produtor, dicas e orientações.",
+   "Transmissão pelo Youtube",
+   "20h (horário de Brasília)",
+   "Pesquisadora FMT",
+   "Mônica Müller -",
+   "Pesquisadora FMT",
+   "Karla Kudlawiec -",
+   "Pesquisador FMT",
+   "João Ascari -",
+   "Moderador",
+   "Luis Carlos Oliveira -",
+   "Gestor Marketing Comercial Fundação MT"
+  ],
+  "startDate": "2022-12-15T00:00:00-04:00",
+  "endDate": "2022-12-15T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1670445629-wT82wTghKq.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/cenario-de-doencas-e-anomalia-nas-regioes-de-mato-grosso-d63d"
+ },
+ {
+  "date": "2022-11-25",
+  "lots": [],
+  "slug": "iii-encontro-tecnico-milho-04db",
+  "title": "III Encontro Técnico Milho",
+  "info": "24 e 25 de Novembro - online",
+  "description": [
+   "Evento online Evento online com 4 horas de duração, conduzido por Pesquisadores da Fundação MT e Especialistas convidados para apresentação de resultados de pesquisa, com a finalidade de prover discussões técnicas para a cultura do milho.",
+   "24/11 Quinta-feira - 07h 20 às 11h10 (horário de MT)",
+   "1º DIA",
+   "Painel 1: MERCADO",
+   "Mercado de Milho no Brasil e no Mundo",
+   "Moderadora",
+   "Renata Maron -",
+   "Jornalista Agro",
+   "Palestrante",
+   "Prof. Dr. Marcos Fava Neves -",
+   "Debatedor",
+   "Francisco Soares -"
+  ],
+  "startDate": "2022-11-24T00:00:00-04:00",
+  "endDate": "2022-11-24T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1666700814-cwTlGFhvO0.png",
+  "offers": [
+   {
+    "name": "Lote 1",
+    "price": 399.0,
+    "validFrom": "2022-10-26T00:00:00-04:00"
+   },
+   {
+    "name": "Lote 2",
+    "price": 499.0,
+    "validFrom": "2022-11-07T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/iii-encontro-tecnico-milho-04db"
+ },
+ {
+  "date": "2022-10-25",
+  "lots": [],
+  "slug": "live-e-hora-de-cuidar-18fc",
+  "title": "Live É hora de cuidar",
+  "info": "25 de outubro",
+  "description": [
+   "Momento de levar para o produtor informações importantes e relevantes para os cuidados pós plantio. Onde pesquisadores da Fundação MT estarão reunidos para abordar assuntos a respeito do Manejo de nematoides",
+   "Transmissão pelo Youtube",
+   "19h (horário de MT)",
+   "Prevenção e Manejo de Nematóides",
+   "Rosangela Silva -",
+   "Fundação MT",
+   "Tania Santos -",
+   "Fundação MT",
+   "Moderador",
+   "Bruno De Conti -",
+   "Head de Pesquisa e Operações de Campo - Fundação MT"
+  ],
+  "startDate": "2022-10-25T00:00:00-04:00",
+  "endDate": "2022-10-25T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1665690136-Qr1wNCKDan.webp",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-e-hora-de-cuidar-18fc"
+ },
+ {
+  "date": "2022-10-04",
+  "lots": [],
+  "slug": "live-e-hora-de-plantar-88ef",
+  "title": "Live É hora de plantar",
+  "info": "4 de outubro 2022",
+  "description": [
+   "Momento de levar para o produtor informações importantes e relevantes para o momento do plantio. Informações como tratamento de sementes, controle de plantas daninhas e uso de pré emergentes, assim como aspectos ligados à qualidade do plantio.",
+   "Transmissão pelo Youtube",
+   "19h (horário de MT)",
+   "Moderador",
+   "Bruno De Conti -",
+   "Head de Pesquisa e Operações de Campo - Fundação MT",
+   "Cuidados no Manejo de Pragas Iniciais",
+   "Lucia Vivan -",
+   "Pesquisadora Fundação MT",
+   "Plantabilidade",
+   "Eng. Agr. Marcello Franchi -",
+   "Pesquisador Fundação MT"
+  ],
+  "startDate": "2022-10-04T00:00:00-04:00",
+  "endDate": "2022-10-04T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1664571582-QGB1HbfHZJ.jpeg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-e-hora-de-plantar-88ef"
+ },
+ {
+  "date": "2022-09-17",
+  "lots": [],
+  "slug": "i-encontro-tecnico-pecuaria-de-corte-c558",
+  "title": "I Encontro Técnico Pecuária de Corte",
+  "info": "17 de Setembro de 2022",
+  "description": [
+   "I Encontro Técnico da Pecuária de Corte, um evento conduzido por um time de especialistas, com discussões e tecnologias da produção animal baseada no uso de pastagens. Participe e adquira conhecimento, atualize-se, relacione-se e contribua para o crescimento e fortalecimento da Pecuária de Corte Mato- Grossense."
+  ],
+  "startDate": "2022-09-17T00:00:00-04:00",
+  "endDate": "2022-09-17T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1662645385-uu7w4SK2Ga.png",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/i-encontro-tecnico-pecuaria-de-corte-c558"
+ },
+ {
+  "date": "2022-08-31",
+  "lots": [],
+  "slug": "xiv-encontro-tecnico-de-algodao-5f6b",
+  "title": "XIV Encontro Técnico de Algodão",
+  "info": "29 a 31 de agosto- Presencial/online",
+  "description": [
+   "O Encontro Técnico tem como objetivo disseminar dados de pesquisa de diferentes instituições, apresentar o posicionamento da Fundação MT, promover diálogos sobre os gargalos da cotonicultura, debater sobre os aspectos relacionados a última safra e planejar a próxima.",
+   "Serão 3 dias na modalidade híbrida (presencial e online), conduzidos por pesquisadores e especialistas convidados da Fundação MT.",
+   "Um momento para adquirir conhecimento, atualizar-se, relacionar-se e projetar novos caminhos",
+   "para a cotonicultura",
+   "Programação:",
+   "Credenciamento 29/08 - 10:00 a 12:00",
+   "Almoço",
+   ": 12:00 as 13:30",
+   "Painéis",
+   ":",
+   "29/08 - 13:30 as 18:00 (finalização com coquetel)",
+   "30/08 - 08:00 as 18:00"
+  ],
+  "startDate": "2022-08-29T00:00:00-04:00",
+  "endDate": "2022-08-29T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1658761758-NNWcU0g9aA.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/xiv-encontro-tecnico-de-algodao-5f6b"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "live-mesa-redonda-xxii-encontro-tecnico-de-soja-8004",
+  "title": "Live mesa redonda XXII Encontro Técnico de Soja",
+  "info": "Transmissão ao vivo pelo youtube",
+  "description": [
+   "Tem dúvidas sobre:",
+   "Incidência de Coleópteros na Soja (Cascudinho e Cerotoma) e Manejo de sugadores no sistema Soja-Milho.",
+   "Desafios no Manejo de Plantas Daninhas.",
+   "Prejuízos causados pelos nematoides no cerrado.",
+   "Participe da Mesa Redonda com os Pesquisadores da Fundação MT .",
+   "Aproveite",
+   "para:",
+   "Obter mais conhecimento técnico e aplicável a sua lavoura;",
+   "Atualizar-se quanto ao manejo no campo;",
+   "Obter mais praticidade no dia a dia.",
+   "Vamos rever ao vivo alguns dos temas principais do XXII Encontro Técnico Soja.",
+   "Vem com a gente!!!!"
+  ],
+  "startDate": "2022-05-30T00:00:00-04:00",
+  "endDate": "2022-05-30T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1653428324-KuLbrnsHSI.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-mesa-redonda-xxii-encontro-tecnico-de-soja-8004"
+ },
+ {
+  "date": "2022-05-26",
+  "lots": [],
+  "slug": "fundacao-em-campo-2-safra-2022-f4ee",
+  "title": "Fundação em Campo 2° Safra - 2022",
+  "info": "25 e 26 de maio em Sorriso e 08 e 09 de junho em Sapezal/ MT",
+  "description": [
+   "Dia de campo com duração de meio período, conduzido pelos Pesquisadores da Fundação MT e Especialistas convidados, para apresentação do posicionamento da Fundação MT referente aos resultados de pesquisa, na ocasião faremos visitas de ensaios a campo, com foco nos principais problemas e soluções para o cultivo e manejo das culturas de milho e algodão 2ª safra nas cidades de Sorriso e Sapezal.",
+   "Programação Sapezal:"
+  ],
+  "startDate": "2022-05-25T00:00:00-04:00",
+  "endDate": "2022-05-25T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1652732245-6pW6zvLkLV.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-em-campo-2-safra-2022-f4ee"
+ },
+ {
+  "date": "2022-04-08",
+  "lots": [],
+  "slug": "escola-de-herbicidas-ii-edicao-dfe1",
+  "title": "Escola de Herbicidas II edição",
+  "info": "05 a 08 de abril",
+  "description": [
+   "A",
+   "Escola de Herbicidas é um novo conceito de treinamento onde o objetivo é levar",
+   "informações técnicas da área de Herbicidas e Plantas Daninhas de forma dinâmica",
+   "e interativa.",
+   "Prepare-se",
+   "para uma imersão de 4 horas no mundo dos herbicidas e das plantas daninhas.",
+   "O",
+   "que a Escola de Herbicidas oferecerá no campo:",
+   "Aplicação em dois estágios de desenvolvimento das plantas daninhas;",
+   "Aplicação em área gradeada para observação de residual de herbicidas;",
+   "Aplicação em pré-emergência de 5 espécies visando avaliar a seletividade em pré-emergência;",
+   "Aplicação em pós-emergência de 5 espécies visando avaliar a seletividade em pós-emergência;"
+  ],
+  "startDate": "2022-04-06T00:00:00-04:00",
+  "endDate": "2022-04-06T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1647034104.jpg",
+  "offers": [
+   {
+    "name": "TURMA 3",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 4",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 7",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 1 -Inscrições encerradas",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 5",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 6",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 8",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   },
+   {
+    "name": "TURMA 2",
+    "price": 1000.0,
+    "validFrom": "2022-03-11T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/escola-de-herbicidas-ii-edicao-dfe1"
+ },
+ {
+  "date": "2022-03-04",
+  "lots": [],
+  "slug": "circuito-do-conhecimento-foco-em-ferrugem-01de",
+  "title": "Circuito do Conhecimento - Foco em Ferrugem",
+  "info": "Primavera do Leste - 04/03/2022",
+  "description": [
+   "Dia de campo com duração de meio período para apresentação do posicionamento e discussão a campo sobre manejo da ferrugem asiática.",
+   "Serão apresentados ao público projetos conduzidos pela Fundação MT, com objetivo de demonstrar resultados de aplicações de produtos, em distintos posicionamentos.",
+   "Local: CAD PRIVAMERA",
+   "Clique aqui para abrir a localização no mapa",
+   "Confira as fotos do último",
+   "evento"
+  ],
+  "startDate": "2022-02-28T00:00:00-04:00",
+  "endDate": "2022-02-28T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1646050256.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/circuito-do-conhecimento-foco-em-ferrugem-01de"
+ },
+ {
+  "date": "2022-01-13",
+  "lots": [],
+  "slug": "fundacao-em-campo-1-safra-2022",
+  "title": "Fundação em Campo 1° Safra - 2022",
+  "info": "12 e 13 de janeiro em Sorriso/MT - 26 de Janeiro em Nova Mutum/MT - 03 e 04 de Fevereiro em Itiquira/MT",
+  "description": [
+   "Dia de campo com duração de cinco dias, conduzido por Pesquisadores da Fundação MT e Especialistas convidados para apresentação dos resultados de pesquisa, visita de ensaios a campo, demonstração de máquinas e posicionamento da Fundação MT, com foco nas principais soluções para o cultivo e manejo da cultura da soja.",
+   "Programação em SORRISO (12 e 13 de janeiro)",
+   "Endereço: Sentido Trevo do Pontal do Verde - MT 242",
+   "*Não será servido almoço no local.",
+   "Dinâmica de máquinas (Jacto)",
+   "Manejo de sugadores no sistema soja/milho: Mosca Branca/Percevejo",
+   "(",
+   "Lúcia Vivan / Mariana Ortega - Fundação MT)",
+   "Manejo de plantas daninhas no sistema de produção (",
+   "Lucas Barcellos - Fundação MT)",
+   "Manejo de mancha alvo na cultura da soja (",
+   "João Ascari / Karla Kudlawiec / Mônica Müller - Fundação MT)"
+  ],
+  "startDate": "2022-02-04T00:00:00-04:00",
+  "endDate": "2022-02-04T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1643206742.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-em-campo-1-safra-2022"
+ },
+ {
+  "date": "2022-01-15",
+  "lots": [],
+  "slug": "circuito-do-conhecimento-mancha-alvo",
+  "title": "Circuito do Conhecimento - Mancha Alvo",
+  "info": "15 de janeiro em Sapezal/MT",
+  "description": [
+   "Dia de campo para convidados com duração de meio período, conduzido por Pesquisadores da Fundação MT e Especialistas convidados, para apresentação do posicionamento da Fundação MT referente aos resultados de pesquisa e visita de ensaios a campo, com foco em avaliar os tratamentos de fungicidas para o controle de Mancha Alvo, seguido de discussão técnica cientifica na cultura da soja.",
+   "Entenda também sobre:",
+   "Cenário na safra 21/22",
+   "Manejo no sistema soja/algodão",
+   "Moléculas químicas para controle",
+   "Faça sua inscrição e participe!"
+  ],
+  "startDate": "2022-01-15T00:00:00-04:00",
+  "endDate": "2022-01-15T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1640353074.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/circuito-do-conhecimento-mancha-alvo"
+ },
+ {
+  "date": "2021-12-16",
+  "lots": [],
+  "slug": "live-pasto-forte",
+  "title": "Live Pasto Forte",
+  "info": "16 de dezembro - online",
+  "description": [
+   "Fundação MT, Acrimat e IMAC se unem para debaterem a realidade da pecuária em Mato Grosso.",
+   "A Live tem como objetivo abordar temas relevantes no contexto do manejo",
+   "de pastagens, incluindo controle de plantas daninhas, adubação de pastagens e",
+   "sustentabilidade do sistema produtivo. Assim como, levar aos pecuaristas",
+   "possibilidades de investimento que tragam retorno econômico e promovam a",
+   "sustentabilidade desta atividade.",
+   "Além das estratégias de manejo, também serão abordados o cenário atual da",
+   "pecuária no Estado de Mato Grosso, cenário atual da cadeia da carne no Estado",
+   "de Mato Grosso, recuperação e reforma de áreas de pastagens degradadas, análise",
+   "técnica e econômica da adubação de pastagem, estoque e fixação de carbono no",
+   "solo visando a produção de carne a pasto de maneira econômica e sustentável e",
+   "por fim, práticas de manejo de plantas daninhas em pastagem."
+  ],
+  "startDate": "2021-12-16T00:00:00-04:00",
+  "endDate": "2021-12-16T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1639075298.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-pasto-forte"
+ },
+ {
+  "date": "2021-12-14",
+  "lots": [],
+  "slug": "live-mancha-alvo",
+  "title": "Live Mancha Alvo",
+  "info": "14 de dezembro - online",
+  "description": [
+   "Entenda o manejo da doença na cultura da soja",
+   "Participe, tire suas dúvidas e atualize-se",
+   "Como identificar?",
+   "A Mancha Alvo pode ser confundida?",
+   "Quais são os desafios do manejo?",
+   "Qual a orientação de controle?",
+   "Data: 14 de dezembro",
+   "Horário: 19h (Fuso-horário de Mato Grosso)"
+  ],
+  "startDate": "2021-12-14T00:00:00-04:00",
+  "endDate": "2021-12-14T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1638801667.jpg",
+  "offers": [
+   {
+    "name": "Tecnobit Sistemas",
+    "price": 3.0,
+    "validFrom": "2023-02-16T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/live-mancha-alvo"
+ },
+ {
+  "date": null,
+  "lots": [],
+  "slug": "dia-de-campo-gergelim",
+  "title": "Dia de Campo - Gergelim",
+  "info": "Panorama da cultura de Gergelim",
+  "description": [
+   "Sebra -",
+   "Reação de materiais de Gergelim a nematoides",
+   "Fundação MT -",
+   "Projetos nas áreas de Fitopatologia, Plantas Daninhas e Fitotecnia",
+   "Fundação MT -",
+   "Debate - Perguntas",
+   "Fundação MT -",
+   "Sebra -"
+  ],
+  "startDate": "2021-12-08T00:00:00-04:00",
+  "endDate": "2021-12-08T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1638456362.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/dia-de-campo-gergelim"
+ },
+ {
+  "date": "2021-12-03",
+  "lots": [],
+  "slug": "circuito-do-conhecimento-plantas-daninhas-68ca",
+  "title": "Circuito do Conhecimento - Plantas Daninhas",
+  "info": "03 de dezembro em Primavera do Leste/MT",
+  "description": [
+   "Dia de campo com duração de 4 horas, conduzido por Pesquisadores da Fundação MT para a discussão e apresentação do manejo de plantas daninhas.",
+   "Neste evento você poderá acompanhar:",
+   "Experimentos do sistema produtivo soja milho/ soja algodão com foco no manejo de pé de galinha com resistência múltipla a herbicidas.",
+   "Estratégias de manejo no primeiro e segundo ano de condução.",
+   "Data:",
+   "03 de dezembro: CAD PRIMAVERA (Primavera do Leste-MT)",
+   "Mapa para chegar ao evento:",
+   "https://goo.gl/maps/kGSnDHzjNzv47Jqi7",
+   "Público:",
+   "Evento fechado para convidados"
+  ],
+  "startDate": "2021-12-03T00:00:00-04:00",
+  "endDate": "2021-12-03T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1651528268-aEJf4SOjPt.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/circuito-do-conhecimento-plantas-daninhas-68ca"
+ },
+ {
+  "date": "2021-11-19",
+  "lots": [],
+  "slug": "ii-encontro-tecnico-milho-7531",
+  "title": "II Encontro Técnico Milho",
+  "info": "18 e 19 de Novembro - online",
+  "description": [
+   "Evento online c",
+   "om 4 horas de duração, conduzido por Pesquisadores da Fundação MT e Especialistas convidados para apresentação de resultados de pesquisa, com a finalidade de prover discussões técnicas para a cultura do milho.",
+   "Formato do evento",
+   "Online",
+   "Alcance*",
+   "Acre, Bahia, Goiás, Maranhão, Mato Grosso, Mato Grosso do Sul, Minas Gerais, Paraná, Rio Grande do Sul, Santa Catarina e São Paulo.",
+   "*",
+   "informações com base nos participantes da última edição.",
+   "Público-alvo",
+   "Produtores, Engenheiros Agrônomos, Equipes Técnicas e Consultores",
+   "Expectativa",
+   "400 pessoas"
+  ],
+  "startDate": "2021-11-18T00:00:00-04:00",
+  "endDate": "2021-11-18T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1636460401.jpg",
+  "offers": [
+   {
+    "name": "Online",
+    "price": 200.0,
+    "validFrom": "2021-11-03T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/ii-encontro-tecnico-milho-7531"
+ },
+ {
+  "date": "2021-09-03",
+  "lots": [],
+  "slug": "xiii-encontro-tecnico-algodao",
+  "title": "XIII Encontro Técnico Algodão",
+  "info": "01, 02 e 03 de Setembro - online",
+  "description": [
+   "Evento técnico online, com duração de 3 manhãs, conduzido por Pesquisadores e Especialistas convidados da Fundação MT. Este evento",
+   "t",
+   "em por objetivo discutir assuntos referentes à cultura do",
+   "algodão da safra 2020/2021 e também das safras futuras. A escolha dos temas e",
+   "também dos participantes convidados é realizada devido a relevância destes no",
+   "cenário da cultura do algodão.",
+   "Formato do evento",
+   "Online",
+   "Alcance*",
+   "Acre, Bahia, Goiás, Maranhão, Mato Grosso, Mato Grosso do Sul,",
+   "Minas Gerais, Paraná, Rio Grande do Sul, Santa Catarina e São Paulo.",
+   "*"
+  ],
+  "startDate": "2021-09-01T00:00:00-04:00",
+  "endDate": "2021-09-01T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1628541557.jpg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/xiii-encontro-tecnico-algodao"
+ },
+ {
+  "date": "2021-05-28",
+  "lots": [],
+  "slug": "fundacao-mt-em-campo-2a-safra-4349",
+  "title": "Fundação MT em Campo 2ª Safra",
+  "info": "27 e 28 de maio em Sorriso e 17 e 18 de junho em Sapezal/ MT",
+  "description": [
+   "Dia de campo com duração de quatro dias, conduzido por Pesquisadores da Fundação MT e Especialistas convidados, para apresentação do posicionamento da Fundação MT referente aos resultados de pesquisa e visita de ensaios a campo, com foco nos principais problemas e soluções para o cultivo e manejo das culturas de milho e algodão 2ª safra",
+   "Sorriso - MT: 27 e 28 de maio",
+   "Sapezal - MT: *17 e 18 de junho",
+   "*Edição especial em parceria com o Senar/MT",
+   "Confira as fotos do último",
+   "evento"
+  ],
+  "startDate": "2021-05-06T00:00:00-04:00",
+  "endDate": "2021-05-06T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1628609210.png",
+  "offers": [
+   {
+    "name": "Primeira Edição",
+    "price": 1200.0,
+    "validFrom": "2021-07-01T00:00:00-04:00"
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/fundacao-mt-em-campo-2a-safra-4349"
+ },
+ {
+  "date": "2021-01-15",
+  "lots": [],
+  "slug": "visita-tecnica-safra-2021-dde1",
+  "title": "Visita Técnica Safra 2021",
+  "info": "14 e 15 de janeiro em Sorriso. 21, 22 de janeiro em Nova Mutum e 27, 28 e 29 de janeiro em Itiquira/MT",
+  "description": [
+   "Dia de campo com duração de sete dias, conduzido por Pesquisadores da Fundação MT e Especialistas convidados para apresentação dos resultados de pesquisa, visita de ensaios a campo, demonstração de máquinas e posicionamento da Fundação MT, com foco nos principais problemas e soluções para o cultivo e manejo da cultura da soja.",
+   "*Edição especial em parceria com o Senar/MT.",
+   "Datas",
+   "14 e 15 de janeiro: CAD Norte (Sorriso-MT)",
+   "21 e 22 de janeiro: CAD Médio Norte (Nova Mutum-MT)",
+   "27, 28 e 29 de janeiro: CAD Sul (Itiquira-MT)",
+   "Alcance",
+   "Região Norte, Médio Norte, Sul do Mato Grosso",
+   "Grupos",
+   "CAD Norte:",
+   "COOAMI, Ass. Eng. Agrônomos, Coacen, Coanorte, Coap, produtores",
+   "e consultores convidados"
+  ],
+  "startDate": "2021-01-14T00:00:00-04:00",
+  "endDate": "2021-01-14T00:00:00-04:00",
+  "attendance": "OfflineEventAttendanceMode",
+  "image": "https://www.fundacaomt.com.br/storage/images/products/1628629434.jpeg",
+  "offers": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/eventos/visita-tecnica-safra-2021-dde1"
+ }
+]

@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+/*
+ * Design system Fundação MT — ver docs/DESIGN_SYSTEM.md
+ * Paleta derivada do logotipo oficial (#4A8B42 / #8DC63F) com verdes profundos,
+ * papel quente e neutros esverdeados. Contrastes validados para WCAG 2.2 AA.
+ */
+@theme {
+  /* Verdes institucionais */
+  --color-forest-950: #0c1f13;
+  --color-forest-900: #12301c;
+  --color-forest-800: #1a4227;
+  --color-forest-700: #245633;
+  --color-brand-600: #2f7a3b; /* ação: botões e links (5,3:1 sobre branco) */
+  --color-brand-500: #4a8b42; /* cor do logotipo: grafismos e títulos grandes */
+  --color-leaf-400: #8dc63f; /* acento do logotipo: só sobre fundos escuros */
+  --color-leaf-200: #cfe5ad;
+  --color-leaf-100: #e6f1d6;
+
+  /* Papel e neutros */
+  --color-paper: #f6f4ee;
+  --color-sand: #ece7dc;
+  --color-sand-300: #ddd5c4;
+  --color-line: #d8d9cf;
+  --color-ink: #16201a;
+  --color-ink-soft: #46514a;
+  --color-ink-mute: #5c665f;
+
+  /* Estados */
+  --color-danger: #a8321f;
+  --color-danger-soft: #f8e6e1;
+  --color-success: #1f6b34;
+
+  /* Tipografia */
+  --font-display: var(--font-sentient), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-general-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --text-display: clamp(2.75rem, 1.6rem + 4.6vw, 5.75rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.025em;
+  --text-h1: clamp(2.5rem, 1.7rem + 3.2vw, 4.5rem);
+  --text-h1--line-height: 1.04;
+  --text-h1--letter-spacing: -0.022em;
+  --text-h2: clamp(2rem, 1.45rem + 2.2vw, 3.5rem);
+  --text-h2--line-height: 1.08;
+  --text-h2--letter-spacing: -0.018em;
+  --text-h3: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.01em;
+  --text-lead: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  --text-lead--line-height: 1.55;
+
+  /* Raios: externo = interno + espaçamento */
+  --radius-sm: 0.625rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+
+  /* Sombras com deslocamento e desfoque suave */
+  --shadow-card: 0 1px 2px rgb(18 48 28 / 0.06), 0 8px 24px -12px rgb(18 48 28 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(18 48 28 / 0.08), 0 18px 40px -18px rgb(18 48 28 / 0.32);
+
+  /* Movimento */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  @media (pointer: fine) {
+    html {
+      overscroll-behavior: none;
+    }
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-feature-settings: "ss01";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p,
+  li {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-leaf-200);
+    color: var(--color-forest-950);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  input,
+  textarea,
+  select {
+    caret-color: var(--color-brand-600);
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-sand-300);
+    border: 3px solid var(--color-paper);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-paper);
+  }
+  img {
+    -webkit-user-drag: none;
+  }
+  /* Itens de grid e flex não podem crescer além da coluna por causa de palavras longas (e-mails, nomes científicos). */
+  .grid > *,
+  .flex > * {
+    min-width: 0;
+  }
+  p,
+  li,
+  a,
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: break-word;
+  }
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 0.4rem + 2.6vw, 3rem);
+  }
+  .measure {
+    max-width: 68ch;
+  }
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s var(--ease-out-expo);
+  }
+  .link-underline:hover,
+  .link-underline:focus-visible {
+    background-size: 100% 1px;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  /* Texto de artigo (notícias) */
+  .prose-article > * + * {
+    margin-top: 1.1em;
+  }
+  .prose-article h2,
+  .prose-article h3 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-top: 1.8em;
+    color: var(--color-ink);
+  }
+  .prose-article ul {
+    list-style: disc;
+    padding-left: 1.25em;
+  }
+  .prose-article blockquote {
+    border-left: 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--color-sand);
+    border-radius: var(--radius-md);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+  }
+}
+
+/* Entrada única do hero: começa visível para quem não tem JS/animação */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-in {
+    animation: hero-rise 0.9s var(--ease-out-expo) both;
+  }
+  .hero-photo {
+    animation: hero-settle 1.6s var(--ease-out-expo) both;
+  }
+}
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+@keyframes hero-settle {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

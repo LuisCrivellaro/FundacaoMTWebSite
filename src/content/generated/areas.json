@@ -1,0 +1,467 @@
+{
+ "data-science": {
+  "slug": "data-science",
+  "title": "Data Science",
+  "paragraphs": [
+   "Setor focado em excelência experimental e gestão da informação, contribuindo com todas a etapas do desenvolvimento dos ensaios e atuando no registro e análise de dados históricos de pesquisa.",
+   "Contribuímos na elaboração da abordagem experimental, no registro dos dados, sua organização e tratamento, visando a obtenção de informações estatísticas em diversas áreas do conhecimento. Forte atuação no desenvolvimento de ferramentas e metodologias de pesquisa, que promovam a eliminação da subjetividade e maior assertividade no registro de avaliações visuais. O setor foi criado em 2021 para atender a demanda de otimização dos procedimentos de avaliações, inserção de dados, análises estatísticas, visualização de dados, programação web-mobile e inteligência artificial na criação de ferramentas digitais diversas para gestão e avaliação de ensaios de pesquisa agropecuária. A Fundação MT preza pela qualidade experimental, e investe na gestão de dados e no aprimoramento de metodologias científicas, visando a excelência em pesquisa para suas recomendações."
+  ],
+  "people": [],
+  "offerings": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/data-science"
+ },
+ "entomologia": {
+  "slug": "entomologia",
+  "title": "Entomologia",
+  "paragraphs": [
+   "Dentro da área de Entomologia, as interações podem ser através de pesquisas para o manejo de pragas no sistema de produção soja, milho e algodão, e outras culturas que fazem parte do sistema de produção do estado do Mato Grosso.",
+   "Como também, estudos específicos de eficácia de controle para cada espécie de praga e a cultura relacionada, com foco em produtos químicos, biológicos e comportamentais."
+  ],
+  "people": [
+   {
+    "name": "Carlos Bezerra",
+    "role": "Pesquisador",
+    "bio": "Engenheiro Agrônomo com mestrado em Fitotecnia pela Universidade Federal Rural do Semi-Árido (UFERSA) e doutorado e pós-doutorado em Agronomia (Entomologia) pela Universidade Federal de Lavras (UFLA). Atua nas áreas de Controle Biológico e Manejo Integrado de Pragas (MIP), com foco em estratégias de manejo de pragas agrícolas e no desenvolvimento de tecnologias para criação e liberação de insetos predadores. Atualmente é pesquisador da Fundação MT.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1793042892-273IU4U8Gc.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Palestras",
+    "items": [
+     "Cigarrinha do milho",
+     "Desafios ligados ao complexo de percevejo soja-milho",
+     "Identificação e boas práticas de manejo para as diferentes pragas e culturas",
+     "Integração de estratégias de manejo para melhores resultados no sistema de produção",
+     "Manejo de pragas iniciais na soja",
+     "Manejo de pragas no sistema de produção",
+     "Manejo de sugadores na cultura da soja",
+     "Manejo e controle de Percevejo castanho da raiz: bioecologia, danos e estratégias de controle",
+     "Produtos biológicos para controle de pragas",
+     "Uso consciente das tecnologias Bt no sistema de produção"
+    ]
+   },
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Controle biológico de lagartas a campo e laboratório",
+     "Controle biológico de mosca branca",
+     "Controle de bicudo do algodoeiro",
+     "Controle químico de pragas em soja, milho e algodão"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Espécies de insetos específicos e a cultura correlacionada com ênfase na identificação, injúrias, estratégias de cont...",
+     "Criação de insetos em laboratório e testes em casa-de-vegetação",
+     "Identificação de pragas, amostragem e danos às culturas"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/entomologia"
+ },
+ "fitopatologia": {
+  "slug": "fitopatologia",
+  "title": "Fitopatologia",
+  "paragraphs": [
+   "A Fitopatologia realiza mais de 200 ensaios a campo a cada safra nos CADs da Fundação MT, que contam com diferentes cenários de doenças tanto na soja, quanto no milho e algodão. Os ensaios são realizados a fim de encontrar estratégias de manejo e tecnologias que venham a contribuir com o sistema de produção, refletindo em maior controle de doenças. Para aprimorar ainda mais a nossa interação e a troca de conhecimento, oferecemos rodadas técnicas dentro das nossas estações de pesquisa e até mesmo na sua propriedade, palestras e treinamentos de diferentes temas relacionados à área de doenças de plantas.",
+   "O setor de Biológicos tem por objetivo realizar pesquisas agronômicas que envolvam a utilização de produtos biológicos, seja para o controle de pragas, doenças ou nematoides, bem como indutores de resistência e promotores de crescimento de plantas, e suas interações dentro de diferentes sistemas produtivos."
+  ],
+  "people": [
+   {
+    "name": "Meyriele Pires de Camargo",
+    "role": "Pesquisadora",
+    "bio": "Engenheira Agrônoma (formada em 2011 pela UDESC), com Mestrado (2014 - USP) e Doutorado (2017 - USP) em Fitopatologia, além de MBA em Agronegócio (2016 - USP). Possui sete anos de experiência na indústria, com foco no planejamento, desenvolvimento e execução de estratégias voltadas ao avanço de produtos e ao desenvolvimento de mercado para cultivares. Ao longo de sua trajetória, desenvolveu experiência sólida em assuntos regulatórios, gestão de pessoas e projetos, além de ampla expertise em fitopatologia, coordenando ensaios laboratoriais, de campo e em ambientes controlados.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1752243373-xyK1sHmVn9.jpg"
+   },
+   {
+    "name": "Mônica Müller",
+    "role": "Pesquisadora",
+    "bio": "Engenheira Agrônoma, Mestre em Agronomia pela Universidade Estadual do Oeste do Paraná, e Doutora em Proteção de Plantas pela Universidade Federal do Paraná, com parte dos seus estudos e experiência profissional na Alemanha pela empresa BASF SE. Dedicou mais de seis anos de atividades voltadas para o controle de doenças da cultura da soja a campo, e estudos laboratoriais com ênfase em resistência de patógenos aos fungicidas.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1738064412-PgJOyszR0C.jpg"
+   },
+   {
+    "name": "Victor Porto",
+    "role": "Pesquisador",
+    "bio": "Engenheiro Agrônomo formado pela Universidade Federal de Lavras (UFLA), onde também concluiu o Mestrado em Fitopatologia. Atua como Pesquisador de Fitopatologia e Biológicos na Fundação MT, com foco em estratégias integradas para o manejo de doenças em culturas como soja, milho e algodão. Sua atuação está centrada na condução de ensaios de campo com produtos biológicos e químicos.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1793046443-PJrRG3w2Xl.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Palestras",
+    "items": [
+     "Manejo de doenças nos sistemas envolvendo as culturas de soja milho e algodão",
+     "Modos de ação de fungicidas e como utilizá-los no manejo de doenças",
+     "Resistência de fungos aos fungicidas"
+    ]
+   },
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Eficácia de produtos a campo",
+     "Manejo integrado de doenças nos sistemas de produção com as culturas soja, milho e algodão",
+     "Posicionamento de produtos no manejo de doenças"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Identificação de doenças a campo"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/fitopatologia"
+ },
+ "fitotecnia": {
+  "slug": "fitotecnia",
+  "title": "Fitotecnia",
+  "paragraphs": [
+   "A área de Fitotecnia tem por objetivo gerar informações que sirvam de suporte para o produtor tomar a decisão mais assertiva sobre escolha de materiais genéticos para a implantação de sua lavoura. Para isso, uma das ferramentas mais utilizadas é a vitrines de variedades, que busca estudar a interação de cultivares com as condições de solo, clima e manejo aonde estarão inseridos. Com a fitotecnia, você pode solicitar palestras presenciais e online. Usamos uma visão integrada, abordando histórico e planejamento do ciclo produtivo. Conte conosco também para capacitar sua equipe comercial e técnica para as atividades mais importantes do ciclo produtivo."
+  ],
+  "people": [
+   {
+    "name": "Ciro Maia de Brito",
+    "role": "Supervisor de Pesquisa",
+    "bio": "Engenheiro Agrônomo pela Universidade Federal de Viçosa (UFV), com mestrado e doutorado em Genética e Melhoramento pela mesma instituição. Atua há mais de 15 anos na área de melhoramento genético de culturas, com ampla experiência em pesquisa aplicada, condução de ensaios a campo, uso de marcadores moleculares e liderança técnica. Atualmente é Supervisor de Pesquisa na Fundação MT, coordenando projetos voltados à geração de conhecimento para a agricultura, com foco especial em soja, milho e algodão. Tem forte atuação em inovação, manejo adaptado a diferentes ambientes de cultivo e integração de ferramentas biotecnológicas no desenvolvimento de soluções para o campo.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1753904117-S8PdEx8E8n.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Palestras",
+    "items": [
+     "Ambientes de produção",
+     "Arranjo populacional",
+     "Biotecnologias",
+     "Componentes de rendimento",
+     "Fenologia das culturas",
+     "Nível de investimento",
+     "Regulação hormonal",
+     "Yield GAP",
+     "Época de semeadura"
+    ]
+   },
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Ajuste populacional",
+     "Culturas alternativas para segunda safra, manejo e posicionamento",
+     "Interação genótipo x ambiente x nível de investimento",
+     "Posicionamento de materiais genéticos",
+     "Época de semeadura x Gestão de risco"
+    ]
+   },
+   {
+    "group": "Serviços",
+    "items": [
+     "Ensaios de VCU, EC e ECV",
+     "Fenotipagem",
+     "Vitrine de Híbridos e Cultivares"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Posicionamento de Híbridos e Cultivares"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/fitotecnia"
+ },
+ "lideranca-de-pesquisa-servicos-e-operacoes": {
+  "slug": "lideranca-de-pesquisa-servicos-e-operacoes",
+  "title": "Liderança de Pesquisa, Serviços e Operações",
+  "paragraphs": [
+   "Gestão de pesquisa, serviços e operações da Fundação MT"
+  ],
+  "people": [
+   {
+    "name": "Luís Carlos Oliveira",
+    "role": "Gerente de Pesquisa, Serviços e Operações",
+    "bio": "Engenheiro Agrônomo formado pela Universidade Federal de Viçosa (UFV) e especialista em Proteção de Plantas, atua na Fundação MT desde 2017. Com passagem pela área comercial e de marketing, onde atuou como gestor, hoje lidera as frentes de Pesquisa e Serviços, sendo responsável por coordenar as equipes técnicas, alinhar demandas de campo, fortalecer a conexão com parceiros e garantir a entrega de soluções assertivas e aplicáveis ao produtor. Sua atuação estratégica contribui para o avanço das pesquisas aplicadas e para a ampliação dos serviços da Fundação, sempre com foco na geração de valor para o agronegócio.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1750193856-ttPFAsiDGE.jpg"
+   },
+   {
+    "name": "Ciro Maia de Brito",
+    "role": "Supervisor de Pesquisa",
+    "bio": "Engenheiro Agrônomo pela Universidade Federal de Viçosa (UFV), com mestrado e doutorado em Genética e Melhoramento pela mesma instituição. Atua há mais de 15 anos na área de melhoramento genético de culturas, com ampla experiência em pesquisa aplicada, condução de ensaios a campo, uso de marcadores moleculares e liderança técnica. Atualmente é Supervisor de Pesquisa na Fundação MT, coordenando projetos voltados à geração de conhecimento para a agricultura, com foco especial em soja, milho e algodão. Tem forte atuação em inovação, manejo adaptado a diferentes ambientes de cultivo e integração de ferramentas biotecnológicas no desenvolvimento de soluções para o campo.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1753904117-S8PdEx8E8n.png"
+   },
+   {
+    "name": "Douglas Vidal",
+    "role": "Supervisor de Operações",
+    "bio": "Engenheiro Agrônomo (UFLA, 2019), com experiência em pesquisa e desenvolvimento agrícola. Iniciou a carreira como Analista de Pesquisa em Minas Gerais e atualmente atua como Supervisor de Operações na Fundação MT. Possui sólida vivência em gestão de pessoas e processos. Tem expertise na condução de lavouras de soja, milho, algodão e gergelim, aplicando práticas que asseguram alta qualidade e produtividade. Atua em diversas áreas do conhecimento, com ênfase em Fitopatologia, Entomologia, Solos e Sistemas, Matologia e Fitotecnia.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1757625400-BkS0agw1ZC.jpg"
+   }
+  ],
+  "offerings": [],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/lideranca-de-pesquisa-servicos-e-operacoes"
+ },
+ "matologia": {
+  "slug": "matologia",
+  "title": "Matologia",
+  "paragraphs": [
+   "Na área de Matologia (plantas daninhas), interagimos através de pesquisas para o posicionamento das principais tecnologias e biotecnologias disponíveis atualmente e no futuro para o manejo de plantas daninhas. Abordamos um novo programa de monitoramento de espécies de difícil controle e resistentes no nosso estado, que passa também, por um rigoroso processo de seleção de herbicidas para o manejo de cada espécie. Você pode contratar também nossas palestras, de forma presencial ou online, para falar de manejo de plantas daninhas nos diferentes sistemas de produção no estado do Mato Grosso. Conte com a gente, também, para treinar sua equipe comercial, a sua distribuição e a equipe técnica, onde iremos ensinar a identificar e manejar as principais espécies de plantas daninhas e aplicar os seus produtos com máximo de eficiência e economia."
+  ],
+  "people": [
+   {
+    "name": "Vicente Pontes",
+    "role": "Pesquisador",
+    "bio": "Mestre em Fitotecnia pela Universidade Federal de Viçosa (UFV). Engenheiro Agrônomo formado pela Universidade Federal Rural da Amazônia (UFRA), Belém - PA. Atualmente é doutorando no programa de pós-graduação em Fitotecnia da Universidade Federal de Viçosa (UFV), membro do grupo de pesquisa em Manejo Integrado de Plantas Daninhas, atuando na área de comportamento de herbicidas no ambiente e tecnologia de aplicação de defensivos agrícolas. Possui experiência em manejo integrado de plantas daninhas, comportamento de herbicidas no ambiente, tecnologia de aplicação de herbicidas e banco de sementes de plantas daninhas.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1793046816-yWoKAOsODi.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Palestras",
+    "items": [
+     "Aplicação de produtos fitossanitários com a máxima eficiência e economia",
+     "Manejo integrado de plantas daninhas nos sistemas de produção do cerrado"
+    ]
+   },
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Aplicação de produtos fitossanitários com a máxima eficiência e economia",
+     "Eficácia de produtos com perspectiva da tecnologia de aplicação",
+     "Monitoramento de plantas daninhas de difícil controle e resistentes no estado do Mato Grosso",
+     "Posicionamento de herbicidas e manejo de plantas daninhas nos sistemas de produção soja-milho e soja-algodão",
+     "Screening de herbicidas para otimização de portfólio das empresas e seletividade para culturas",
+     "Uso potencial e posicionamento das novas tecnologias e biotecnologias para o manejo das plantas daninhas"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Identificação e manejo das principais plantas daninhas do cerrado",
+     "Tecnologia de aplicação de produtos fitossanitários com máxima eficiência e economia"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/matologia"
+ },
+ "mecanizacao-agricola": {
+  "slug": "mecanizacao-agricola",
+  "title": "Mecanização Agrícola",
+  "paragraphs": [
+   "A área de pesquisa em Mecanização Agrícola e Tecnologia de Aplicação atua com foco na avaliação técnica, imparcial e confiável de máquinas, equipamentos e tecnologias voltadas à agricultura. Realizamos ensaios de validação e desempenho de máquinas novas, protótipos e equipamentos já estabelecidos no mercado, além de testes comparativos entre diferentes fabricantes e modelos.Também conduzimos estudos e testes de tecnologia de aplicação de defensivos e fertilizantes — em formato sólido ou líquido, por via terrestre e aérea — considerando critérios como eficiência, uniformidade, cobertura e segurança operacional.Os trabalhos são executados com base em protocolos técnicos robustos, atendendo a empresas do setor de máquinas e implementos, instituições de pesquisa, startups do agro e produtores rurais. Toda a atuação é pautada pela credibilidade, imparcialidade dos resultados e pela geração de conhecimento aplicado ao campo.Além das pesquisas, a equipe também realiza treinamentos técnicos e palestras voltadas a equipes de campo, operadores, consultores e gestores, abordando as boas práticas de uso e regulagem de máquinas e tecnologias, visando maior eficiência operacional e retorno agronômico."
+  ],
+  "people": [
+   {
+    "name": "Márcia Menezes",
+    "role": "Pesquisadora",
+    "bio": "",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1793039659-teE4LD1lGb.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Avaliações de Equipamentos em Propriedades",
+    "items": [
+     "Calibração e acompanhamento de todas as operações mecanizadas na propriedade, dimensionamento, rendimento e qualidade..."
+    ]
+   },
+   {
+    "group": "Palestras",
+    "items": [
+     "Mecanização Agrícola e resultados de pesquisa em solos de cerrado do plantio à colheita"
+    ]
+   },
+   {
+    "group": "Pesquisa",
+    "items": [
+     "Avaliação e validação de performance de máquinas e tecnologias agrícolas no desenvolvimento das lavouras.",
+     "Protocolos de pesquisa para avaliação da influência dos parâmetros mecânicos e tecnológicos no desenvolvimento e prod..."
+    ]
+   },
+   {
+    "group": "Serviços",
+    "items": [
+     "Auditorias de acompanhamento de desempenho",
+     "Avaliações de Máquinas Agrícolas",
+     "Benchmark imparcial e extremamente confidencial",
+     "Disponibilidade (agilidade em manutenções/facilidades)",
+     "Eficiência operacional/consumo",
+     "Qualidade operacional (parâmetros qualitativos)"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Posicionamento e utilização de produtos e tecnologias para operações mecanizadas",
+     "Preparo das equipes técnicas e operacionais quanto à calibração de máquinas, equipamentos e sensores"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/mecanizacao-agricola"
+ },
+ "nematologia": {
+  "slug": "nematologia",
+  "title": "Nematologia",
+  "paragraphs": [
+   "Convidamos você a conhecer nossa estrutura de pesquisa e interagir com nossos resultados de Nematologia. Caracterizamos produtos químicos e biológicos em todas as fases de desenvolvimento, trabalhos em parceria com produtores e empresas com aplicação em larga escala em suas propriedades e áreas assistidas. Oferecemos treinamentos online e presencial, no campo ou laboratório para empresa e todo público de interesse sobre os melhores resultados e opções de manejo na área de Nematologia."
+  ],
+  "people": [
+   {
+    "name": "Rosângela Silva",
+    "role": "Pesquisadora",
+    "bio": "Possui graduação em Agronomia pela Universidade Federal de Mato Grosso (1998), mestrado em Fitopatologia pela Escola Superior de Agricultura Luiz de Queiroz (2001) e Doutorado em Fitopatologia pela Escola Superior de Agricultura Luiz de Queiroz (2008). Foi Professora Titular do Centro Universitário de Várzea Grande no período de julho de 2001 à janeiro de 2013. Atualmente é pesquisadora da Fundação MT, tendo experiência na área de Agronomia, com ênfase em Nematologia, atuando principalmente nos seguintes temas: manejo de nematoides em soja, milho e algodão.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1738068105-KvVTxAK361.jpg"
+   },
+   {
+    "name": "Tania Santos",
+    "role": "Pesquisadora",
+    "bio": "Possui graduação em Biologia pela Universidade Federal de Mato Grosso (2005), Especialização em Defesa Fitossanitária pelo Centro de Ensino Superior de Rondonópolis, mestrado em Engenharia Agrícola pela Universidade Federal de Mato Grosso (2012) e doutorado em Agricultura Tropical pela Universidade Federal de Mato Grosso. Atualmente é Pesquisadora na Fundação Mato Grosso. Responsável pelo laboratório de Nematologia e ensaios de Casa de Vegetação. Tem experiência na área de Agronomia, com ênfase em Nematologia, atuando principalmente nos seguintes temas: Taxonomia de fitonematoides, Avaliação da resistência aos nematoides de galhas (Meloidogyne spp), Nematoide de cisto (Raças e ensaios com Heterodera glycines), nematoides da lesões (Pratylenchus brachyurus), avaliação da eficácia de nematicidas químicos e biológicos.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1738068333-9qUQZkB0O8.jpg"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Cursos",
+    "items": [
+     "CURSO DE NEMATOLOGIA"
+    ]
+   },
+   {
+    "group": "Palestras",
+    "items": [
+     "Diagnósticos de problemas nematológicos e estratégias de manejo integrado",
+     "Eficácia de produtos biológicos e químicos no manejo de nematoides"
+    ]
+   },
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Avaliação de período de proteção das raízes por químicos (teste de penetração",
+     "Caracterização de produtos químicos e biológicos em todas as fases de desenvolvimento dos produtos",
+     "Posicionamentos de produtos no mercado com visão técnico-comercial",
+     "Validação de doses e modos de aplicação para o manejo de todos os fitonematoides nas culturas de soja, milho, algodão..."
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Coleta, armazenamento e envio de amostras nematológicas aos laboratórios",
+     "Curso de capacitação para equipes que trabalham em laboratório e casa de vegetação focando em análises de nematoides",
+     "Interpretação de laudos de análises nematológicas, incluindo a eficácia de produtos biológicos e químicos no manejo d...",
+     "Reconhecimento dos nematoides que ocorrem no cerrado"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/nematologia"
+ },
+ "pecuaria": {
+  "slug": "pecuaria",
+  "title": "Pecuária",
+  "paragraphs": [
+   "A área de Pecuária de Corte, desenvolve pesquisas com foco em bovinos e pastagens, permitindo a geração de soluções, inovações tecnológicas e práticas de manejo, visando o aumento da produtividade e rentabilidade, sempre associadas à conservação ambiental e bem-estar animal. Também são desenvolvidas recomendações para a recuperação e renovação de pastagens, que é a principal fonte de alimento na pecuária de corte no Mato Grosso. Entender as interações no sistema solo-planta-animal é o caminho para a construção de ambientes pastoris ecologicamente sustentáveis e favoráveis ao forrageamento."
+  ],
+  "people": [
+   {
+    "name": "Ciro Maia de Brito",
+    "role": "Supervisor de Pesquisa",
+    "bio": "Engenheiro Agrônomo pela Universidade Federal de Viçosa (UFV), com mestrado e doutorado em Genética e Melhoramento pela mesma instituição. Atua há mais de 15 anos na área de melhoramento genético de culturas, com ampla experiência em pesquisa aplicada, condução de ensaios a campo, uso de marcadores moleculares e liderança técnica. Atualmente é Supervisor de Pesquisa na Fundação MT, coordenando projetos voltados à geração de conhecimento para a agricultura, com foco especial em soja, milho e algodão. Tem forte atuação em inovação, manejo adaptado a diferentes ambientes de cultivo e integração de ferramentas biotecnológicas no desenvolvimento de soluções para o campo.",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1753904117-S8PdEx8E8n.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Investimento em correção e adubação do solo em diferentes ambientes pastoris, visando manejo eficiente e sustentável"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Investimento em correção e adubação do solo em pastagem visando a intensificação na produtividade de bovinos de corte...",
+     "Manejo do pastejo como promotor da produtividade de bovinos de corte"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/pecuaria"
+ },
+ "solos-nutricao-e-sistemas-de-producao": {
+  "slug": "solos-nutricao-e-sistemas-de-producao",
+  "title": "Solos, Nutrição e Sistemas de Produção",
+  "paragraphs": [
+   "Em Solos, podemos interagir com você por meio de pesquisa para validar a eficiência agronômica de corretivos, fertilizantes, bioestimulantes, solubilizadores e outros. Além de orientar no posicionamento e desenvolvimento de novas tecnologias. Nesta linha, é possível solicitar nossas palestras presencial ou online para discutir sobre estratégias de manejo do solo, adubação e nutrição das culturas com visão sistêmica, ou sobre sistemas de produção com uso de plantas de cobertura e influência no manejo da adubação. Conte com a Fundação MT para capacitar sua equipe comercial e técnica na coleta, análise e interpretação de solo e plantas, e recomendação de corretivos e fertilizantes."
+  ],
+  "people": [
+   {
+    "name": "Almir Salvador",
+    "role": "Pesquisador",
+    "bio": "",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1793039933-MvvxEhnmzm.png"
+   },
+   {
+    "name": "Patrícia Matias",
+    "role": "Pesquisadora",
+    "bio": "",
+    "photo": "https://www.fundacaomt.com.br/storage/images/researchers/1793042636-yjO8Q1ysqb.png"
+   }
+  ],
+  "offerings": [
+   {
+    "group": "Palestras",
+    "items": [
+     "Manejo de sistemas de produção e da adubação para solos arenosos",
+     "Manejo integrado dos sistemas de produção para potencializar a rentabilidade, produtividade e melhoria contínua do solo",
+     "Respostas das culturas soja, milho e algodão a estratégias de correção de solo, adubação e nutrição",
+     "Uso correto de corretivos e fertilizantes"
+    ]
+   },
+   {
+    "group": "Pesquisa a campo e em casa de vegetação",
+    "items": [
+     "Ambientes de produção e estratégia de manejo",
+     "Avaliação as condições químicas, físicas e biológicas do solo",
+     "Desenvolvimento e posicionamento sobre as novas tecnologias - produtos",
+     "Eficiência agronômica de corretivos, fertilizantes, bioestimulantes, enraizados, solubilizadores de nutrientes e outros",
+     "Manejo da correção do solo, adubação e nutrição das culturas com visão sistêmica"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Interpretação de análises de solo e folhas para recomendação de corretivos e fertilizantes com visão sistêmica"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/solos-nutricao-e-sistemas-de-producao"
+ },
+ "tecnologia-de-aplicacao-e-variabilidade-espacial": {
+  "slug": "tecnologia-de-aplicacao-e-variabilidade-espacial",
+  "title": "Tecnologia de Aplicação e Variabilidade Espacial",
+  "paragraphs": [
+   "Para as empresas de máquinas, disponibilizamos protocolos de pesquisa, avaliando suas tecnologias atuais e em desenvolvimento. Avaliações comparativas entre máquinas e tecnologias com os resultados extremamente confidenciais. Para você produtor rural, além de realizarmos o acompanhamento de todas as operações mecanizadas, também oferecemos identificação e o manejo da variabilidade espacial, com a utilização de sensores e muita tecnologia, direcionamos as amostragens de solo para as análises físicas, químicas e biológicas. Recomendamos estratégias de manejo específicas, explorando ao máximo o retorno financeiro de cada ambiente de produção. A Fundação MT oferece palestras técnicas e treinamentos para suas equipes, podendo ser online ou presencial"
+  ],
+  "people": [],
+  "offerings": [
+   {
+    "group": "Interação em propriedades",
+    "items": [
+     "Amostragem de solo com alta eficiência e qualidade, com metodologia própria estratificando as camadas de interesse ag...",
+     "Definição de zonas de manejo e recomendação de aplicação de corretivos, fertilizantes e sementes em taxa variada",
+     "Definição e manejo de ambientes de produção através de ferramentas para caracterização da variabilidade espacial.",
+     "Direcionamento das subdivisões de amostragem de solo de acordo com as regiões distintas do talhão",
+     "Estratégias de manejo potencializando a rentabilidade para cada ambiente de produção definido",
+     "Instalação e condução de experimentos na propriedade para ajuste fino das recomendações e embasamento das tomadas de ...",
+     "Levantamentos a campo validando os dados em função da realidade dos ambientes",
+     "Mapeamento com condutividade elétrica do solo; índices vegetativos",
+     "Processamento de mapas de fertilidade",
+     "Processamento dos dados de produtividade"
+    ]
+   },
+   {
+    "group": "Treinamentos",
+    "items": [
+     "Preparo das equipes técnicas e operacionais quanto a calibração de máquinas, equipamentos e sensores"
+    ]
+   }
+  ],
+  "sourceUrl": "https://www.fundacaomt.com.br/area-de-pesquisa/tecnologia-de-aplicacao-e-variabilidade-espacial"
+ }
+}
