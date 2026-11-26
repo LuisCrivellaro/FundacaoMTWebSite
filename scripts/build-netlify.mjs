@@ -229,7 +229,8 @@ for (const { source, destination } of legacyRedirects) {
 }
 fs.writeFileSync(
   path.join(OUT, "_redirects"),
-  `# URLs do site antigo → site novo (gerado de src/content/redirects.ts)\n${redirectLines.join("\n")}\n`,
+  // Set: "/x" explícito + "/x/:slug*" geram a mesma linha "/x"; o Netlify usa só a primeira.
+  `# URLs do site antigo → site novo (gerado de src/content/redirects.ts)\n${[...new Set(redirectLines)].join("\n")}\n`,
 );
 
 fs.writeFileSync(
@@ -258,7 +259,7 @@ fs.cpSync(OUT, DEST, { recursive: true });
 const files = walk(DEST);
 const bytes = files.reduce((s, f) => s + fs.statSync(f).size, 0);
 log(`pronto: netlify-drop/ com ${files.length} arquivos, ${(bytes / 1024 / 1024).toFixed(1)} MB.`);
-log(`${generated} versões de imagem geradas, ${redirectLines.length} redirecionamentos.`);
+log(`${generated} versões de imagem geradas, ${new Set(redirectLines).size} redirecionamentos.`);
 if (failures.length) {
   log(`AVISO: ${failures.length} imagens com problema (ficam sem foto):`);
   for (const f of failures.slice(0, 20)) log(`  - ${f}`);

@@ -1,29 +1,37 @@
 # AI_HANDOFF — novo site da Fundação MT
 
-> Atualizado em 26/11/2026. Repositório `LuisCrivellaro/FundacaoMTWebSite`.
+> Atualizado em 26/11/2026 (2ª sessão do dia). Repositório `LuisCrivellaro/FundacaoMTWebSite`.
 > Pesquisa do site antigo e contexto da empresa: `docs/analise-site-atual/AI_HANDOFF.md`.
 > Leia também `CLAUDE.md` (regras do projeto) e `AGENTS.md` (Next 16: leia `node_modules/next/dist/docs/` antes de usar APIs).
 
 ## 0. Retomada rápida (leia primeiro)
 
-**Última tarefa (concluída em 26/11/2026):** preparar uma **prévia estática para publicar no Netlify Drop** (https://app.netlify.com/drop, arrastar e soltar uma pasta). O usuário vai hospedar a prévia só por um dia. Pedido: "prepare toda a pasta para isso".
+**Atenção:** o trabalho atual está na branch **`feat/animacoes-e-fotos`**, não na `main`. Um clone novo abre na `main` (desatualizada): rode `git checkout feat/animacoes-e-fotos` antes de tudo.
+
+**Última sessão (26/11/2026, Windows 10, Node 22.14):** retomou a prévia do Netlify Drop e as pendências que não dependem da Fundação.
+- Prévia regenerada e **testada no navegador** com `scripts/serve-netlify-drop.mjs` (servidor que imita o Netlify, agora no repositório e no `launch.json` como `netlify-drop`): home e `/eventos/` a 1024/1300 px; contato, notícia e 404 a 375 px; envio do formulário mostra "O envio direto pelo site ainda não está ativo" com e-mail e WhatsApp, sem requisição; redirecionamentos 301 conferidos com `curl`; nenhuma imagem quebrada; fontes carregadas.
+- `build:netlify` agora passa `--experimental-strip-types` (o script importa `.ts`; Node 22.6+ precisa da flag, Node 24 ignora).
+- `_redirects` sem linhas duplicadas (`/transparencia` aparecia duas vezes); 99 regras.
+- Home ganhou `canonical` (`/`), que faltava (as internas já tinham).
+- **Cabeçalho corrigido** (pendência 2 da §7 antiga): o menu completo precisava de ~1.268 px de conteúdo e se sobrepunha de 1024 até ~1370 px. Agora: botão "Menu" abaixo de 1280 px (`xl`); de 1280 a 1407 px versão compacta (itens `px-3`, "Área do usuário" só com ícone `UserRound`, rótulo `sr-only` e `title`); a partir de 1408 px (breakpoint `wide` = 88rem em `@theme` no `globals.css`) tudo por extenso. Medido sem sobreposição em 1280, 1300 e 1408 px; mega-menu e painel "Menu" testados.
+- `npm run typecheck`, `npx eslint src scripts` e `npm run build` (228 páginas) passam. `npm run build:netlify`: 2.631 arquivos, 91,0 MB, 216 fotos sem falhas.
 
 **Branch e commits**
 - Branch de trabalho: `feat/animacoes-e-fotos` (criada a partir de `main`). **Não fazer merge na `main` sem autorização do usuário. Não usar force push.**
 - `main` = `origin/main` = `54ff8d9` (site completo + pesquisa).
 - `1d0e480` (na branch): animações ao rolar, sete fotos novas, typecheck com `next typegen`, entrada `site-windows` no launch.json, docs.
-- `660aceb`: handoff. `390c319`: build estático para o Netlify Drop. O commit seguinte: downloads com limite (HTTP 429) e docs finais. Tudo enviado para `origin/feat/animacoes-e-fotos`.
+- `660aceb`: handoff. `390c319`: build estático para o Netlify Drop. `940ba50`: downloads com limite (HTTP 429). `1a62e9d`: handoff.
+- Commit desta sessão: cabeçalho responsivo, canonical da home, servidor de teste e ajustes do `build:netlify`. Ver `git log` para saber se já foi enviado ao `origin` (o push depende de pedido do usuário).
 
-**Estado:** `npm run build:netlify` passa e gera `netlify-drop/` com 2.631 arquivos (90,8 MB), 216 fotos convertidas sem falhas e 100 redirecionamentos. Testado com servidor local que imita o Netlify: home, `/eventos` → `/eventos/` (301), notícia, contato, `/sobre-nos` → `/a-fundacao/`, `/area-experimental/cad-norte` → `/centros-experimentais/cad-norte/`, 404, `robots.txt`, CSS, fontes e WebP com 200. Build normal conferido depois das mudanças: `npm run typecheck`, `npx eslint src` e `npm run build` (228 páginas) passam. **Não testados:** o upload real no Netlify, visual no navegador da pasta estática, o clique no envio do formulário no estático.
+**Não testados:** o upload real no Netlify; Safari/iOS e Firefox; leitor de tela.
 
-**Próxima ação exata** (para gerar de novo ou continuar)
-1. `npm install` (num clone novo) e confirme que existem `scripts/build-netlify.mjs`, `src/lib/static-image-loader.ts`, `src/content/event-split.ts`, `src/content/event-split.static.ts` e `docs/DEPLOY_NETLIFY_DROP.md`.
-2. Confirme que o código-fonte está íntegro (o script altera arquivos temporariamente; ver §0.3): `git status` não deve mostrar `src/app/api` ausente, `robots.ts`/`sitemap.ts` ausentes nem `instant` removido das rotas `[slug]`. Se mostrar, rode o script uma vez (ele restaura no início) ou `git checkout -- src/app`.
+**Próxima ação exata**
+1. Num clone novo: `git checkout feat/animacoes-e-fotos`, `npm install`.
+2. Confirme que o código-fonte está íntegro (o script altera arquivos temporariamente; ver §0.3): `git status` limpo.
 3. Pare o `npm run dev`, rode `npm run build:netlify` e leia o fim da saída (`[netlify] pronto: netlify-drop/ com N arquivos, X MB`).
-4. Teste a pasta com um servidor que imite o Netlify (ver §0.4) em 1440 px e 375 px: home, `/eventos/`, uma notícia, `/contato/` (envio → aviso "O envio direto pelo site ainda não está ativo" com e-mail e WhatsApp), um redirecionamento antigo (`/sobre-nos` → `/a-fundacao/`) e uma página inexistente (404).
-5. Confirme que o build normal não mudou: `npm run typecheck`, `npx eslint src`, `npm run build` (228 páginas).
-6. Atualize `DEPLOY_NETLIFY_DROP.md` com tamanho e número de arquivos reais, commit e push da branch.
-7. Diga ao usuário para arrastar a pasta **`netlify-drop`** inteira em https://app.netlify.com/drop.
+4. Opcional: `node scripts/serve-netlify-drop.mjs` (ou `preview_start` com `netlify-drop`) e confira em http://localhost:4173.
+5. O usuário arrasta a pasta **`netlify-drop`** inteira em https://app.netlify.com/drop.
+6. Depois: itens da §7 que não dependem da Fundação (ex.: trilha de navegação das notícias, abaixo).
 
 ### 0.1 Histórico do build estático (o que já falhou e por quê)
 
@@ -61,7 +69,7 @@ Durante `npm run build:netlify`, `src/app/api`, `src/app/robots.ts`, `src/app/si
 
 ### 0.4 Servidor de teste que imita o Netlify
 
-A sessão anterior usou um script local de ~60 linhas (fora do repositório). Ele serve um arquivo exato, depois `pasta/index.html`, depois `arquivo.html`; aplica `_redirects` simples (`:placeholder`, `*`, código 301); manda `/x` → `/x/` quando existe `x/index.html`; e cai em `404.html`. Recriar se precisar (`node serve.mjs netlify-drop 4173`), ou usar `npx serve netlify-drop` (não aplica `_redirects`).
+`scripts/serve-netlify-drop.mjs` (no repositório desde 26/11/2026): `node scripts/serve-netlify-drop.mjs netlify-drop 4173`, ou `preview_start` com `netlify-drop`. Serve um arquivo exato, depois `pasta/index.html`; aplica `_redirects` simples (`:placeholder`, `*`, código 301); manda `/x` → `/x/` quando existe `x/index.html`; tenta `arquivo.html`; e cai em `404.html` com status 404.
 
 ## 1. Estado do site
 
@@ -69,11 +77,11 @@ Construído e funcional em Next.js: todas as páginas públicas, navegação, bu
 
 ## 2. Como rodar
 
-- Node 20.9+. Máquina atual: Windows 11, Node do sistema (`C:\Program Files\nodejs`, v24.15.0). Na máquina anterior (macOS) era `export PATH=$HOME/.local/node/bin:$PATH`.
-- Num clone novo: `npm install` antes de tudo.
+- Node 20.9+ (22.6+ para `build:netlify`). Máquinas usadas: Windows 10 com Node do sistema v22.14.0 (26/11, 2ª sessão); Windows 11 com v24.15.0; macOS com `export PATH=$HOME/.local/node/bin:$PATH`.
+- Num clone novo: `git checkout feat/animacoes-e-fotos` e `npm install` antes de tudo. O `npm install` com npm 10 tira campos `libc` do `package-lock.json`; descarte essa mudança (`git checkout -- package-lock.json`).
 - `npm run dev` (porta 3000; baixa as fontes antes). No navegador do Claude: `preview_start` com `site-windows` (Windows) ou `site` (macOS/Linux), de `.claude/launch.json`.
-- `npm run build && npm start` para produção. `npm run typecheck` (= `next typegen && tsc --noEmit`) e `npx eslint src` passavam em `1d0e480`. Não rode `npx tsc --noEmit` sozinho num clone novo.
-- `npm run build:netlify` para a prévia estática (§0).
+- `npm run build && npm start` para produção. `npm run typecheck` (= `next typegen && tsc --noEmit`) e `npx eslint src scripts` passam (26/11/2026). Não rode `npx tsc --noEmit` sozinho num clone novo.
+- `npm run build:netlify` para a prévia estática (§0) e `node scripts/serve-netlify-drop.mjs` para testá-la (§0.4).
 - Variáveis: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_LEGACY_URL`, `CONTACT_WEBHOOK_URL` (ver `README.md`). Internas do build estático: `STATIC_EXPORT`, `NEXT_PUBLIC_STATIC_EXPORT`.
 
 ## 3. Arquitetura
@@ -108,12 +116,14 @@ Fora do site de propósito: área logada, inscrição e compra (continuam no sis
 
 ## 7. Pendências e próximos passos
 
-**Desta tarefa:** olhar a pasta estática no navegador; o usuário publica arrastando `netlify-drop/` no Netlify Drop (a pasta precisa ser gerada de novo num clone novo: `npm install` + `npm run build:netlify`).
+**Desta tarefa:** a pasta `netlify-drop/` está gerada e testada localmente. Falta o usuário publicar arrastando-a no Netlify Drop (num clone novo, gerar de novo: `npm install` + `npm run build:netlify`).
+
+**Feito em 26/11/2026 (2ª sessão):** cabeçalho entre 1024 e ~1370 px (era a antiga pendência 2), canonical da home, trilha de navegação com título longo no celular (o item atual agora fica em uma linha com reticências; antes quebrava e deixava a seta solta), `_redirects` sem duplicatas.
 
 **Depois:**
 1. Revisar com a Fundação: textos, fotos, pendências da `AUDITORIA_FINAL.md §6`. Combinar com ela a prévia pública.
-2. Ajustar o cabeçalho entre ~768 e ~1024 px: "A Fundação" e "Área do usuário" quebram em duas linhas (visto a ~800 px).
-3. Trocar as imagens remotas por arquivos autorizados otimizados.
-4. Configurar `CONTACT_WEBHOOK_URL` e GTM com consentimento.
-5. Ligar notícias e eventos a uma fonte de dados (CMS headless ou API do Laravel).
-6. Testes com leitor de tela, Safari/iOS, Firefox e 4G real; emular `prefers-reduced-motion`; definir hospedagem definitiva e o subdomínio do sistema legado.
+2. Trocar as imagens remotas por arquivos autorizados otimizados.
+3. Configurar `CONTACT_WEBHOOK_URL` e GTM com consentimento.
+4. Ligar notícias e eventos a uma fonte de dados (CMS headless ou API do Laravel).
+5. Testes com leitor de tela, Safari/iOS, Firefox e 4G real; emular `prefers-reduced-motion`; definir hospedagem definitiva e o subdomínio do sistema legado.
+6. Revisar o cabeçalho em tablets na faixa de 1024 a 1279 px (agora usam o botão "Menu"): os botões do painel ficam com a largura toda, o que funciona, mas pode ganhar um layout em duas colunas.

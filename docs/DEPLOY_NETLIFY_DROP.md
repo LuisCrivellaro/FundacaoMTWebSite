@@ -10,11 +10,20 @@ Prévia temporária do site novo em https://app.netlify.com/drop (arrastar e sol
    npm run build:netlify
    ```
 
-   Leva alguns minutos na primeira vez (baixa e converte as fotos). As próximas execuções usam o cache em `.cache/fotos-originais`. Resultado em 26/11/2026: **2.631 arquivos, 90,8 MB**, 216 fotos em 6 larguras (1.296 WebP), 100 redirecionamentos, nenhuma falha.
+   Leva alguns minutos na primeira vez (baixa e converte as fotos). As próximas execuções usam o cache em `.cache/fotos-originais`. Resultado em 26/11/2026 (Windows 10, Node 22.14): **2.631 arquivos, 91,0 MB**, 216 fotos em 6 larguras (1.296 WebP), 99 regras de redirecionamento, nenhuma falha.
+
+   Node 22.6 ou mais novo: o script importa arquivos `.ts` (`--experimental-strip-types`, já no `package.json`; no Node 23.6+ isso é padrão).
 
    O servidor oficial limita requisições (HTTP 429): o script baixa com 2 conexões e espera e tenta de novo (até 6 vezes, respeitando `Retry-After`). Se ainda assim faltar alguma foto, o fim da saída lista quais; rode de novo (as que já baixaram vêm do cache).
-2. Abra https://app.netlify.com/drop e arraste a pasta **`netlify-drop`** (a pasta inteira, não o conteúdo nem um zip de outra pasta).
-3. O Netlify devolve um endereço `https://<nome-aleatório>.netlify.app`. Publicado sem conta, o site pode ser temporário: siga o aviso da própria página do Netlify (entrar na conta ou "reivindicar" o site para mantê-lo). Para tirar do ar depois, apague o site no painel do Netlify (Site configuration → Delete site).
+2. (Opcional) Teste localmente com um servidor que imita o Netlify (arquivos, `index.html` de pastas, `_redirects`, barra final e `404.html`):
+
+   ```powershell
+   node scripts/serve-netlify-drop.mjs netlify-drop 4173
+   ```
+
+   Abra http://localhost:4173. No navegador do Claude: `preview_start` com o nome `netlify-drop` (`.claude/launch.json`).
+3. Abra https://app.netlify.com/drop e arraste a pasta **`netlify-drop`** (a pasta inteira, não o conteúdo nem um zip de outra pasta).
+4. O Netlify devolve um endereço `https://<nome-aleatório>.netlify.app`. Publicado sem conta, o site pode ser temporário: siga o aviso da própria página do Netlify (entrar na conta ou "reivindicar" o site para mantê-lo). Para tirar do ar depois, apague o site no painel do Netlify (Site configuration → Delete site).
 
 A pasta `netlify-drop/` **não vai para o git** (tem as fontes do Fontshare, que a licença proíbe redistribuir em repositório público, e cópias das fotos).
 

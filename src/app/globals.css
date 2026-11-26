@@ -6,6 +6,9 @@
  * papel quente e neutros esverdeados. Contrastes validados para WCAG 2.2 AA.
  */
 @theme {
+  /* Breakpoint extra (1408 px): a partir daqui o cabeçalho mostra "Área do usuário" por extenso e espaços maiores. */
+  --breakpoint-wide: 88rem;
+
   /* Verdes institucionais */
   --color-forest-950: #0c1f13;
   --color-forest-900: #12301c;

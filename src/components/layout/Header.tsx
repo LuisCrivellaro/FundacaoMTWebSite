@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { ArrowRight, ArrowUpRight, ChevronDown, Menu, Search, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ChevronDown, Menu, Search, UserRound, X } from "lucide-react";
 import { navigation, external, contact } from "@/content/site";
 import { media } from "@/content/media";
 import { cn } from "@/lib/format";
@@ -81,7 +81,8 @@ export function Header() {
         scrolled || open || mobile ? "bg-paper shadow-[0_1px_0_var(--color-line)]" : "bg-paper",
       )}
     >
-      <div className="wrap flex h-[4.5rem] items-center justify-between gap-6">
+      {/* Menu completo a partir de 1280 px (abaixo, botão "Menu"). Entre 1280 e 1407 px ele fica compacto (espaços menores e "Área do usuário" só com ícone) para caber em uma linha. */}
+      <div className="wrap flex h-[4.5rem] items-center justify-between gap-4 wide:gap-6">
         <Link href="/" className="relative -ml-1 flex shrink-0 items-center rounded-md p-1" aria-label="Fundação MT — página inicial">
           <Image
             src={media.logoHorizontal.src}
@@ -93,8 +94,8 @@ export function Header() {
           />
         </Link>
 
-        <nav aria-label="Principal" className="hidden lg:block">
-          <ul className="flex items-center gap-1">
+        <nav aria-label="Principal" className="hidden xl:block">
+          <ul className="flex items-center gap-0.5 wide:gap-1">
             {navigation.map((g) => {
               const expanded = open === g.label;
               return (
@@ -105,7 +106,7 @@ export function Header() {
                     aria-controls={`${panelId}-${g.label}`}
                     onClick={() => setOpen(expanded ? null : g.label)}
                     className={cn(
-                      "flex min-h-11 items-center gap-1 rounded-full px-4 text-[0.9375rem] font-medium transition-colors",
+                      "flex min-h-11 items-center gap-1 whitespace-nowrap rounded-full px-3 text-[0.9375rem] font-medium transition-colors wide:px-4",
                       expanded || isCurrent(g.href) ? "bg-forest-900/[0.07] text-forest-950" : "text-ink-soft hover:text-forest-950",
                     )}
                   >
@@ -121,11 +122,11 @@ export function Header() {
           </ul>
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden shrink-0 items-center gap-1 xl:flex wide:gap-2">
           <Link
             href="/busca"
             aria-label="Buscar no site"
-            className="grid size-11 place-items-center rounded-full text-ink-soft transition-colors hover:bg-forest-900/[0.06] hover:text-forest-950"
+            className="grid size-11 shrink-0 place-items-center rounded-full text-ink-soft transition-colors hover:bg-forest-900/[0.06] hover:text-forest-950"
           >
             <Search aria-hidden="true" className="size-5" />
           </Link>
@@ -133,10 +134,12 @@ export function Header() {
             href={external.userArea}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-11 items-center gap-1 rounded-full px-4 text-[0.9375rem] font-medium text-ink-soft hover:text-forest-950"
+            title="Área do usuário (site oficial)"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1 whitespace-nowrap rounded-full text-[0.9375rem] font-medium text-ink-soft transition-colors hover:bg-forest-900/[0.06] hover:text-forest-950 wide:px-4 wide:hover:bg-transparent"
           >
-            Área do usuário
-            <ArrowUpRight aria-hidden="true" className="size-4" />
+            <UserRound aria-hidden="true" className="size-5 wide:hidden" />
+            <span className="sr-only wide:not-sr-only">Área do usuário</span>
+            <ArrowUpRight aria-hidden="true" className="hidden size-4 wide:block" />
             <span className="sr-only"> (site oficial, abre em nova aba)</span>
           </a>
           <ButtonLink href="/contato" icon="none">
@@ -146,7 +149,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex min-h-11 items-center gap-2 rounded-full px-4 font-medium text-forest-950 ring-1 ring-line lg:hidden"
+          className="inline-flex min-h-11 items-center gap-2 rounded-full px-4 font-medium text-forest-950 ring-1 ring-line xl:hidden"
           aria-expanded={mobile}
           aria-controls="menu-mobile"
           onClick={() => setMobile((v) => !v)}
@@ -168,7 +171,7 @@ export function Header() {
             transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
             onMouseEnter={() => hoverOpen(active.label)}
             onMouseLeave={hoverClose}
-            className="absolute inset-x-0 top-full hidden border-t border-line bg-paper shadow-[0_24px_48px_-24px_rgb(18_48_28/0.25)] lg:block"
+            className="absolute inset-x-0 top-full hidden border-t border-line bg-paper shadow-[0_24px_48px_-24px_rgb(18_48_28/0.25)] xl:block"
           >
             <div className="wrap grid grid-cols-12 gap-10 py-10">
               <div className="col-span-4">
@@ -215,7 +218,7 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 top-[4.5rem] bottom-0 overflow-y-auto overscroll-contain bg-paper lg:hidden"
+            className="fixed inset-x-0 top-[4.5rem] bottom-0 overflow-y-auto overscroll-contain bg-paper xl:hidden"
           >
             <MobileMenu />
           </motion.div>

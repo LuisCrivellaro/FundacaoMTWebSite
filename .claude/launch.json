@@ -4,14 +4,33 @@
     {
       "name": "site",
       "runtimeExecutable": "/bin/zsh",
-      "runtimeArgs": ["-c", "export PATH=$HOME/.local/node/bin:$PATH && npm run dev -- --port 3000"],
+      "runtimeArgs": [
+        "-c",
+        "export PATH=$HOME/.local/node/bin:$PATH && npm run dev -- --port 3000"
+      ],
       "port": 3000
     },
     {
       "name": "site-windows",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "--port", "3000"],
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "3000"
+      ],
       "port": 3000
+    },
+    {
+      "name": "netlify-drop",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "scripts/serve-netlify-drop.mjs",
+        "netlify-drop",
+        "4173"
+      ],
+      "port": 4173
     }
   ]
 }

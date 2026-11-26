@@ -57,14 +57,15 @@ export function Breadcrumbs({ items, tone = "dark" }: { items: { label: string; 
           </Link>
         </li>
         {items.map((it, i) => (
-          <li key={it.label} className="flex items-center gap-1">
-            <ChevronRight aria-hidden="true" className="size-3.5 opacity-60" />
+          <li key={it.label} className="flex min-w-0 max-w-full items-center gap-1">
+            <ChevronRight aria-hidden="true" className="size-3.5 shrink-0 opacity-60" />
             {it.href && i < items.length - 1 ? (
               <Link href={it.href} className="rounded px-1 py-2 hover:underline">
                 {it.label}
               </Link>
             ) : (
-              <span aria-current="page" className={cn("px-1 py-2", tone === "dark" ? "text-ink" : "text-white")}>
+              // Uma linha só (o título completo é o h1 logo abaixo); leitores de tela leem o texto inteiro.
+              <span aria-current="page" className={cn("truncate px-1 py-2", tone === "dark" ? "text-ink" : "text-white")}>
                 {it.label}
               </span>
             )}

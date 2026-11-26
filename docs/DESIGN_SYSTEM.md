@@ -58,6 +58,7 @@ Regras: linha de texto até ~68 caracteres (`.measure`); `text-wrap: balance` em
 
 - Contêiner `.wrap`: até 88rem (1408 px), margem lateral fluida de 16 a 48 px.
 - Grid de 12 colunas em `lg`; uma coluna no celular. Itens de grid/flex têm `min-width: 0` global (evita estouro por e-mails e nomes científicos).
+- Cabeçalho: botão "Menu" (painel em tela cheia) abaixo de `xl` (1280 px); menu completo com mega-menu a partir de `xl`. Entre 1280 e 1407 px fica compacto (itens com `px-3`, "Área do usuário" só com ícone, rótulo para leitor de tela e tooltip); a partir do breakpoint próprio `wide` (88rem, 1408 px, em `@theme`) mostra tudo por extenso. Antes, com o menu completo desde 1024 px, os itens se sobrepunham até ~1370 px.
 - Ritmo vertical das seções: `py-24` (96 px) no celular e `py-32` (128 px) a partir de `md`.
 - Raios: `sm` 10 px (campos, miniaturas) · `md` 16 px (imagens de cartão) · `lg` 24 px (cartões) · `xl` 32 px (painéis de hero e CTA). Raio interno = externo − espaçamento.
 - Sombras: `shadow-card` (repouso) e `shadow-lift` (hover), sempre com deslocamento e desfoque.
